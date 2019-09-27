@@ -15,6 +15,16 @@ namespace QLthuvien.GUI
         public FormBanDoc()
         {
             InitializeComponent();
+
+
+
+
+
+        }
+
+        private void FormBanDoc_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

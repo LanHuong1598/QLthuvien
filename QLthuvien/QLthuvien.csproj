@@ -69,6 +69,9 @@
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormBanDoc.resx">
+      <DependentUpon>FormBanDoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormSach.resx">
       <DependentUpon>FormSach.cs</DependentUpon>
     </EmbeddedResource>
