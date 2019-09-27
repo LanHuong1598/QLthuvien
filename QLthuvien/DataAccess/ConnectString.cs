@@ -24,6 +24,7 @@ namespace QLthuvien
             }
             catch
             {
+
                 string connectionString1 = @"Data Source=DESKTOP-LQQ51RU\SON" + Environment.MachineName + ";" + " Initial Catalog=QuanLyThuVien;Integrated Security=True";
                 return connectionString1;
             }
