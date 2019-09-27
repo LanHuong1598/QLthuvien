@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QLthuvien
 {
-    public partial class Form1 : Form
+    public partial class FormSach : Form
     {
-        public Form1()
+        public FormSach()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            FormSach fs = new FormSach();
-            fs.Show();
         }
     }
 }
