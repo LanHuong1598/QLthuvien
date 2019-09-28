@@ -52,6 +52,12 @@
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormBanDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormBanDoc.Designer.cs">
+      <DependentUpon>FormBanDoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormBanDoc.resx">
+      <DependentUpon>FormBanDoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormSach.resx">
       <DependentUpon>FormSach.cs</DependentUpon>
