@@ -40,5 +40,10 @@ namespace QLthuvien
             this.Visible = true;
             a.ShowDialog();
         }
+
+        private void gunaControlBox1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

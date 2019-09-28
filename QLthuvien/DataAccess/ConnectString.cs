@@ -9,9 +9,9 @@ namespace QLthuvien
 {
     class ConnectString
     {
-        public string getConnectionString()
+        public string getConnectionString(int value)
         {
-            if(checkCnn() == 0)
+            if(value == 0)
             {
                 return @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
             }
