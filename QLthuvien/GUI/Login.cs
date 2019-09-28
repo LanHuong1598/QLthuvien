@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLthuvien.GUI;
@@ -17,12 +18,16 @@ namespace QLthuvien
         public Form1()
         {
             InitializeComponent();
-            ConnectString check = new ConnectString();
-            checkConnectionString = check.checkCnn();
+            Thread threadCheckConnect = new Thread(check);
+            threadCheckConnect.Start();
            
 
         }
-
+        public void check()
+        {
+            ConnectString check = new ConnectString();
+            checkConnectionString = check.checkCnn();
+        }
         private void btn_newAcc_Click(object sender, EventArgs e)
         {
             FrNewAccount acc = new FrNewAccount();
