@@ -82,22 +82,31 @@ namespace QLthuvien.GUI
 
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult res = MessageBox.Show("Bạn có thực sự muốn xóa sách có mã là " + FormTuaSach.idtuasach, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                try
+                {
+
+                    delete(FormTuaSach.idtuasach);
+                    MessageBox.Show("Xóa thành công");
+
+                    string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
+    "TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +
+    "where TuaSach.MaNXB = NXB.MaNXB";
+                    invalidate(query);
+
+                }
+                catch
+                {
+                    MessageBox.Show("Xóa không thành công");
+                }
+            }
+            if (res == DialogResult.No)
             {
 
-                delete(FormTuaSach.idtuasach);
-                MessageBox.Show("Xóa thành công");
-
-                string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
-"TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +
-"where TuaSach.MaNXB = NXB.MaNXB";
-                invalidate(query);
-
             }
-            catch
-            {
-                MessageBox.Show("Xóa không thành công");
-            }
+           
         }
         public void delete(string key)
         {
@@ -156,6 +165,24 @@ namespace QLthuvien.GUI
             string Ma = temp.Cells[0].Value.ToString();
             FormTuaSach.idtuasach = Ma;
             //FormBanDoc.Tenbandoc = ten;
+        }
+
+        private void gunaTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+            string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
+"TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +
+"where TuaSach.MaNXB = NXB.MaNXB and TenTS like N'%" + gunaTextBox1.Text.Trim() + "%'";
+            invalidate(query);
+        }
+
+        private void gunaTextBox1_MouseEnter(object sender, EventArgs e)
+        {
+            if (gunaTextBox1.Text == "Tìm kiếm tại đây") gunaTextBox1.Text = "";
         }
     }
     /* public partial class FormTuaSach : Form
