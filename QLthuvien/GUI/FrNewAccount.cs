@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace QLthuvien.GUI
 {
-    public partial class NewAccount : Form
+    public partial class FrNewAccount : Form
     {
-        public NewAccount()
+        public FrNewAccount()
         {
             InitializeComponent();
+          //  this.WindowState = FormWindowState.Minimized;
+            MaximizeBox = false;
+            
+        }
+
+        private void btn_create_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

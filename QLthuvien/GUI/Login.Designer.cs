@@ -187,6 +187,7 @@
             this.gunaAdvenceButton1.TabIndex = 9;
             this.gunaAdvenceButton1.Text = "Đăng nhập";
             this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // gunaDragControl1
             // 

@@ -1,6 +1,6 @@
 ﻿namespace QLthuvien.GUI
 {
-    partial class NewAccount
+    partial class FrNewAccount
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewAccount));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrNewAccount));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txt_user = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -38,10 +38,10 @@
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaRadioButton2 = new Guna.UI.WinForms.GunaRadioButton();
+            this.gunaRadioButton1 = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_create = new Guna.UI.WinForms.GunaAdvenceButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,9 +51,9 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel1.Location = new System.Drawing.Point(55, 113);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(78, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(104, 20);
             this.gunaLabel1.TabIndex = 7;
-            this.gunaLabel1.Text = "Tài khoản :";
+            this.gunaLabel1.Text = "Tên tài khoản :";
             // 
             // txt_user
             // 
@@ -162,18 +162,6 @@
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
-            // gunaRadioButton1
-            // 
-            this.gunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.gunaRadioButton1.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton1.Location = new System.Drawing.Point(61, 21);
-            this.gunaRadioButton1.Name = "gunaRadioButton1";
-            this.gunaRadioButton1.Size = new System.Drawing.Size(59, 20);
-            this.gunaRadioButton1.TabIndex = 0;
-            this.gunaRadioButton1.Text = "Nam";
-            // 
             // gunaRadioButton2
             // 
             this.gunaRadioButton2.BaseColor = System.Drawing.SystemColors.Control;
@@ -186,6 +174,18 @@
             this.gunaRadioButton2.TabIndex = 1;
             this.gunaRadioButton2.Text = "Nữ";
             // 
+            // gunaRadioButton1
+            // 
+            this.gunaRadioButton1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaRadioButton1.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaRadioButton1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.gunaRadioButton1.FillColor = System.Drawing.Color.White;
+            this.gunaRadioButton1.Location = new System.Drawing.Point(61, 21);
+            this.gunaRadioButton1.Name = "gunaRadioButton1";
+            this.gunaRadioButton1.Size = new System.Drawing.Size(59, 20);
+            this.gunaRadioButton1.TabIndex = 0;
+            this.gunaRadioButton1.Text = "Nam";
+            // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
@@ -196,44 +196,45 @@
             this.gunaLabel4.TabIndex = 17;
             this.gunaLabel4.Text = "Giới tính :";
             // 
-            // gunaAdvenceButton1
+            // btn_create
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.BorderSize = 2;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(64, 558);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(184)))), ((int)(((byte)(234)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(322, 47);
-            this.gunaAdvenceButton1.TabIndex = 18;
-            this.gunaAdvenceButton1.Text = "Đăng ký";
-            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_create.AnimationHoverSpeed = 0.07F;
+            this.btn_create.AnimationSpeed = 0.03F;
+            this.btn_create.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.btn_create.BorderColor = System.Drawing.Color.Black;
+            this.btn_create.BorderSize = 2;
+            this.btn_create.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_create.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_create.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_create.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_create.CheckedImage")));
+            this.btn_create.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_create.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_create.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_create.ForeColor = System.Drawing.Color.White;
+            this.btn_create.Image = null;
+            this.btn_create.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_create.LineColor = System.Drawing.Color.Black;
+            this.btn_create.Location = new System.Drawing.Point(64, 558);
+            this.btn_create.Name = "btn_create";
+            this.btn_create.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(184)))), ((int)(((byte)(234)))));
+            this.btn_create.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_create.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_create.OnHoverImage = null;
+            this.btn_create.OnHoverLineColor = System.Drawing.Color.Black;
+            this.btn_create.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_create.Size = new System.Drawing.Size(322, 47);
+            this.btn_create.TabIndex = 18;
+            this.btn_create.Text = "Đăng ký";
+            this.btn_create.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
-            // NewAccount
+            // FrNewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(438, 698);
-            this.Controls.Add(this.gunaAdvenceButton1);
+            this.Controls.Add(this.btn_create);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gunaLabel5);
@@ -244,7 +245,8 @@
             this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txt_user);
-            this.Name = "NewAccount";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "FrNewAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng ký";
             this.groupBox1.ResumeLayout(false);
@@ -268,6 +270,6 @@
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton2;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_create;
     }
 }
