@@ -42,6 +42,7 @@
             this.chk_savedAcc = new Guna.UI.WinForms.GunaMediumCheckBox();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.btn_newAcc = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,7 +140,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(1033, 393);
+            this.gunaLabel3.Location = new System.Drawing.Point(1002, 398);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(197, 20);
             this.gunaLabel3.TabIndex = 7;
@@ -151,7 +152,7 @@
             this.chk_savedAcc.CheckedOffColor = System.Drawing.Color.Black;
             this.chk_savedAcc.CheckedOnColor = System.Drawing.Color.Black;
             this.chk_savedAcc.FillColor = System.Drawing.Color.White;
-            this.chk_savedAcc.Location = new System.Drawing.Point(1001, 393);
+            this.chk_savedAcc.Location = new System.Drawing.Point(970, 398);
             this.chk_savedAcc.Name = "chk_savedAcc";
             this.chk_savedAcc.Size = new System.Drawing.Size(20, 20);
             this.chk_savedAcc.TabIndex = 8;
@@ -174,7 +175,7 @@
             this.gunaAdvenceButton1.Image = null;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(1050, 455);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(974, 459);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(184)))), ((int)(((byte)(234)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -182,7 +183,7 @@
             this.gunaAdvenceButton1.OnHoverImage = null;
             this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(180, 47);
+            this.gunaAdvenceButton1.Size = new System.Drawing.Size(322, 47);
             this.gunaAdvenceButton1.TabIndex = 9;
             this.gunaAdvenceButton1.Text = "Đăng nhập";
             this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -191,6 +192,37 @@
             // 
             this.gunaDragControl1.TargetControl = this.gunaPictureBox1;
             // 
+            // btn_newAcc
+            // 
+            this.btn_newAcc.AnimationHoverSpeed = 0.07F;
+            this.btn_newAcc.AnimationSpeed = 0.03F;
+            this.btn_newAcc.BaseColor = System.Drawing.Color.White;
+            this.btn_newAcc.BorderColor = System.Drawing.Color.Black;
+            this.btn_newAcc.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_newAcc.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_newAcc.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_newAcc.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_newAcc.CheckedImage")));
+            this.btn_newAcc.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_newAcc.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_newAcc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_newAcc.ForeColor = System.Drawing.Color.Black;
+            this.btn_newAcc.Image = null;
+            this.btn_newAcc.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_newAcc.LineColor = System.Drawing.Color.White;
+            this.btn_newAcc.Location = new System.Drawing.Point(974, 558);
+            this.btn_newAcc.Name = "btn_newAcc";
+            this.btn_newAcc.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btn_newAcc.OnHoverBorderColor = System.Drawing.Color.White;
+            this.btn_newAcc.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_newAcc.OnHoverImage = null;
+            this.btn_newAcc.OnHoverLineColor = System.Drawing.Color.White;
+            this.btn_newAcc.OnPressedColor = System.Drawing.Color.Transparent;
+            this.btn_newAcc.Size = new System.Drawing.Size(180, 47);
+            this.btn_newAcc.TabIndex = 11;
+            this.btn_newAcc.Text = "Bạn chưa có tài khoản ?";
+            this.btn_newAcc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_newAcc.Click += new System.EventHandler(this.btn_newAcc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,6 +230,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1360, 647);
+            this.Controls.Add(this.btn_newAcc);
             this.Controls.Add(this.gunaAdvenceButton1);
             this.Controls.Add(this.chk_savedAcc);
             this.Controls.Add(this.gunaLabel3);
@@ -232,6 +265,7 @@
         private Guna.UI.WinForms.GunaTextBox txt_user;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_newAcc;
     }
 }
 

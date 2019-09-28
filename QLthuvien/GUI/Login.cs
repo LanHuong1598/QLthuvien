@@ -19,6 +19,10 @@ namespace QLthuvien
 
         }
 
-     
+        private void btn_newAcc_Click(object sender, EventArgs e)
+        {
+            NewAccount acc = new NewAccount();
+            acc.ShowDialog();
+        }
     }
 }
