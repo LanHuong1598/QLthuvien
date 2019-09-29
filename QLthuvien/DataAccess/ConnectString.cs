@@ -17,14 +17,14 @@ namespace QLthuvien
             }
             else
             {
-                return @"Data Source=./EXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                return @"Data Source="+ Environment.MachineName +"\\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
             }
         }
         public int checkCnn()
         {
             try
             {
-                string temp = @"Data Source=./EXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string temp = @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
