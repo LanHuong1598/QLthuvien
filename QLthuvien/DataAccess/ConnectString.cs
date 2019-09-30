@@ -17,7 +17,7 @@ namespace QLthuvien
             }
             else
             {
-                return @"Data Source=.//SQLEXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                return @"Data Source=./EXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
             }
         }
         public int checkCnn()
