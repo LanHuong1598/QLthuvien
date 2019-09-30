@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaoDien));
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
@@ -35,6 +36,7 @@
             this.exit_app = new Guna.UI.WinForms.GunaControlBox();
             this.btn_logout = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,6 +150,13 @@
             this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "Đăng xuất";
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // frmGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,5 +189,6 @@
         private Guna.UI.WinForms.GunaControlBox exit_app;
         private Bunifu.Framework.UI.BunifuImageButton btn_logout;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
