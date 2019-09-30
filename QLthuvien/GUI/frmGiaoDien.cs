@@ -22,5 +22,15 @@ namespace QLthuvien.GUI
             frmManagerialPerson fmp = new frmManagerialPerson();
             fmp.ShowDialog();
         }
+
+        private void exit_app_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

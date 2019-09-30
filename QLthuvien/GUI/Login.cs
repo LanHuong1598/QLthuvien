@@ -37,8 +37,9 @@ namespace QLthuvien
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
             frmGiaoDien a = new frmGiaoDien();
-            this.Visible = true;
+            this.Hide();
             a.ShowDialog();
+            this.Show();
         }
 
         private void gunaControlBox1_Click(object sender, EventArgs e)
