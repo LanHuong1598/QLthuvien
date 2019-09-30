@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\QuanLyNhanSu\QuanLyNhanSu\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\TestGunaFramework\TestGunaFramework\Guna.UI.dll</HintPath>
+      <HintPath>..\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\frmGiaodien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmGiaodien.Designer.cs">
+      <DependentUpon>frmGiaodien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmManagerialPerson.cs">
       <SubType>Form</SubType>
     </Compile>
