@@ -24,7 +24,7 @@ namespace QLthuvien
         {
             try
             {
-                string temp = @"Data Source=.//SQLEXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string temp = @"Data Source=./EXPRESS:Initial Catalog=QuanLyThuVien;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
