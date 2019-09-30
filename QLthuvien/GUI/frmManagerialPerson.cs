@@ -25,7 +25,7 @@ namespace QLthuvien.GUI
         {
             DataSet data = new DataSet();
             ConnectString b = new ConnectString();
-            string con = b.getConnectionString(Form1.checkConnectionString);
+            string con = b.getConnectionString(form.checkConnectionString);
             using (SqlConnection connect = new SqlConnection(con))
             {
 

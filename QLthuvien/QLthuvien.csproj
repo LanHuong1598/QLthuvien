@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\QuanLyNhanSu\QuanLyNhanSu\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\TestGunaFramework\TestGunaFramework\Guna.UI.dll</HintPath>
+      <HintPath>C:\Users\admin\Downloads\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="GUI\frmManagerialPerson.Designer.cs">
       <DependentUpon>frmManagerialPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fr_exitBandoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fr_exitBandoc.Designer.cs">
+      <DependentUpon>fr_exitBandoc.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.cs">
       <SubType>Form</SubType>
