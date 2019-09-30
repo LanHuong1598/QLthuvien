@@ -39,7 +39,7 @@
             this.gunaCircleButton1.AnimationSpeed = 0.03F;
             this.gunaCircleButton1.BaseColor = System.Drawing.Color.White;
             this.gunaCircleButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.BorderSize = 2;
+            this.gunaCircleButton1.BorderSize = 1;
             this.gunaCircleButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaCircleButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.Black;
@@ -62,7 +62,7 @@
             this.gunaCircleButton2.AnimationSpeed = 0.03F;
             this.gunaCircleButton2.BaseColor = System.Drawing.Color.White;
             this.gunaCircleButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.BorderSize = 2;
+            this.gunaCircleButton2.BorderSize = 1;
             this.gunaCircleButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaCircleButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCircleButton2.ForeColor = System.Drawing.Color.Black;
@@ -78,6 +78,7 @@
             this.gunaCircleButton2.Size = new System.Drawing.Size(200, 200);
             this.gunaCircleButton2.TabIndex = 1;
             this.gunaCircleButton2.Text = "User";
+            this.gunaCircleButton2.Click += new System.EventHandler(this.gunaCircleButton2_Click);
             // 
             // gunaCircleButton3
             // 
@@ -85,7 +86,7 @@
             this.gunaCircleButton3.AnimationSpeed = 0.03F;
             this.gunaCircleButton3.BaseColor = System.Drawing.Color.White;
             this.gunaCircleButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.BorderSize = 2;
+            this.gunaCircleButton3.BorderSize = 1;
             this.gunaCircleButton3.FocusedColor = System.Drawing.Color.Empty;
             this.gunaCircleButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCircleButton3.ForeColor = System.Drawing.Color.Black;

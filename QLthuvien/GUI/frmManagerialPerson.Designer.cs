@@ -390,6 +390,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txt_user);
             this.Name = "frmManagerialPerson";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Người ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

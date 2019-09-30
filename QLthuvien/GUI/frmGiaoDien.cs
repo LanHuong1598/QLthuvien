@@ -16,5 +16,11 @@ namespace QLthuvien.GUI
         {
             InitializeComponent();
         }
+
+        private void gunaCircleButton2_Click(object sender, EventArgs e)
+        {
+            frmManagerialPerson fmp = new frmManagerialPerson();
+            fmp.ShowDialog();
+        }
     }
 }
