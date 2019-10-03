@@ -19,7 +19,7 @@ namespace QLthuvien.GUI
 
         private void gunaCircleButton2_Click(object sender, EventArgs e)
         {
-            frmManagerialPerson fmp = new frmManagerialPerson();
+            FormBanDoc fmp = new FormBanDoc();
             fmp.ShowDialog();
         }
 
