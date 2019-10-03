@@ -67,6 +67,12 @@
     <Compile Include="GUI\frmadd_docgia.Designer.cs">
       <DependentUpon>frmadd_docgia.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmedit_docgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmedit_docgia.Designer.cs">
+      <DependentUpon>frmedit_docgia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmGiaoDien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
 =======
     <EmbeddedResource Include="GUI\frmadd_docgia.resx">
       <DependentUpon>frmadd_docgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmedit_docgia.resx">
+      <DependentUpon>frmedit_docgia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmGiaoDien.resx">
       <DependentUpon>frmGiaoDien.cs</DependentUpon>

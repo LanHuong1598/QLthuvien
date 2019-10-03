@@ -41,5 +41,11 @@ namespace QLthuvien.GUI
             frmadd_docgia fr = new frmadd_docgia();
             fr.ShowDialog();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            frmedit_docgia fr = new frmedit_docgia();
+            fr.ShowDialog();
+        }
     }
 }
