@@ -33,7 +33,13 @@ namespace QLthuvien.GUI
                 apter.Fill(data);
                 connect.Close();
             }
-            show_badoc.DataSource = data.Tables[0];
+            showData.DataSource = data.Tables[0];
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            frmadd_docgia fr = new frmadd_docgia();
+            fr.ShowDialog();
         }
     }
 }

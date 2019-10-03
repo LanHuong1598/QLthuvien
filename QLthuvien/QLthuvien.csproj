@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\frmadd_docgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmadd_docgia.Designer.cs">
+      <DependentUpon>frmadd_docgia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmGiaoDien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\frmadd_docgia.resx">
+      <DependentUpon>frmadd_docgia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmGiaoDien.resx">
       <DependentUpon>frmGiaoDien.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +145,7 @@
   <ItemGroup>
     <Content Include="Img\background.jpg" />
     <Content Include="Img\delete.png" />
+    <Content Include="Img\doc_gia.jpg" />
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
