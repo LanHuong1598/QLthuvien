@@ -18,6 +18,9 @@ namespace QLthuvien.GUI
             InitializeComponent();
         }
 
-        
+        private void FormTuaSach_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
