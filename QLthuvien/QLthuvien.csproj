@@ -116,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormMuonTra.resx">
+      <DependentUpon>FormMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTuaSach.resx">
       <DependentUpon>FormTuaSach.cs</DependentUpon>
     </EmbeddedResource>
