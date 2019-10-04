@@ -16,5 +16,10 @@ namespace QLthuvien.GUI
         {
             InitializeComponent();
         }
+
+        private void FormMuonTra_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
