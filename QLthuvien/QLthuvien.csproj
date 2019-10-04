@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTuaSach.Designer.cs">
+      <DependentUpon>FormTuaSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmadd_docgia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormTuaSach.resx">
+      <DependentUpon>FormTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmadd_docgia.resx">
       <DependentUpon>frmadd_docgia.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,18 +139,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -158,6 +167,14 @@
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\xoasach.png" />
+    <None Include="Resources\suasach.png" />
+    <None Include="Resources\themsach.png" />
+    <None Include="Resources\them.png" />
     <None Include="Img\iconsearch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
