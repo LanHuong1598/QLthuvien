@@ -31,7 +31,7 @@ namespace QLthuvien.GUI
                 connect.Open();
                 SqlDataAdapter apter = new SqlDataAdapter(query, con);
                 apter.Fill(data);
-                connect.Close();
+                connect.Close();      
             }
             showData.DataSource = data.Tables[0];
         }
