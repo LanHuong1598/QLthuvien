@@ -19,7 +19,7 @@ namespace QLthuvien.GUI
 
         private void gunaCircleButton2_Click(object sender, EventArgs e)
         {
-            frmManagerialPerson fmp = new frmManagerialPerson();
+            FormBanDoc fmp = new FormBanDoc();
             fmp.ShowDialog();
         }
 
@@ -31,6 +31,12 @@ namespace QLthuvien.GUI
         private void btn_logout_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void gunaCircleButton1_Click(object sender, EventArgs e)
+        {
+            FormTuaSach a = new FormTuaSach();
+            a.ShowDialog();
         }
     }
 }

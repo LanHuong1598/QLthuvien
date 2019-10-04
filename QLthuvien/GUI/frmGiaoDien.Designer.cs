@@ -52,16 +52,18 @@
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaCircleButton1.Image = null;
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(141, 253);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(106, 206);
+            this.gunaCircleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton1.OnHoverImage = null;
             this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.Size = new System.Drawing.Size(200, 200);
+            this.gunaCircleButton1.Size = new System.Drawing.Size(150, 162);
             this.gunaCircleButton1.TabIndex = 0;
             this.gunaCircleButton1.Text = "Sách";
+            this.gunaCircleButton1.Click += new System.EventHandler(this.gunaCircleButton1_Click);
             // 
             // gunaCircleButton2
             // 
@@ -75,14 +77,15 @@
             this.gunaCircleButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaCircleButton2.Image = null;
             this.gunaCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton2.Location = new System.Drawing.Point(499, 253);
+            this.gunaCircleButton2.Location = new System.Drawing.Point(374, 206);
+            this.gunaCircleButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaCircleButton2.Name = "gunaCircleButton2";
             this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton2.OnHoverImage = null;
             this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.Size = new System.Drawing.Size(200, 200);
+            this.gunaCircleButton2.Size = new System.Drawing.Size(150, 162);
             this.gunaCircleButton2.TabIndex = 1;
             this.gunaCircleButton2.Text = "User";
             this.gunaCircleButton2.Click += new System.EventHandler(this.gunaCircleButton2_Click);
@@ -99,14 +102,15 @@
             this.gunaCircleButton3.ForeColor = System.Drawing.Color.Black;
             this.gunaCircleButton3.Image = null;
             this.gunaCircleButton3.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton3.Location = new System.Drawing.Point(857, 253);
+            this.gunaCircleButton3.Location = new System.Drawing.Point(643, 206);
+            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaCircleButton3.Name = "gunaCircleButton3";
             this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaCircleButton3.OnHoverImage = null;
             this.gunaCircleButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.Size = new System.Drawing.Size(200, 200);
+            this.gunaCircleButton3.Size = new System.Drawing.Size(150, 162);
             this.gunaCircleButton3.TabIndex = 2;
             this.gunaCircleButton3.Text = "Mượn trả";
             // 
@@ -117,12 +121,13 @@
             this.exit_app.AnimationSpeed = 0.03F;
             this.exit_app.IconColor = System.Drawing.Color.Black;
             this.exit_app.IconSize = 15F;
-            this.exit_app.Location = new System.Drawing.Point(1156, 12);
+            this.exit_app.Location = new System.Drawing.Point(867, 10);
+            this.exit_app.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exit_app.Name = "exit_app";
             this.exit_app.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.exit_app.OnHoverIconColor = System.Drawing.Color.White;
             this.exit_app.OnPressedColor = System.Drawing.Color.Black;
-            this.exit_app.Size = new System.Drawing.Size(45, 29);
+            this.exit_app.Size = new System.Drawing.Size(34, 24);
             this.exit_app.TabIndex = 3;
             this.exit_app.Click += new System.EventHandler(this.exit_app_Click);
             // 
@@ -131,9 +136,10 @@
             this.btn_logout.BackColor = System.Drawing.Color.White;
             this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
             this.btn_logout.ImageActive = null;
-            this.btn_logout.Location = new System.Drawing.Point(12, 12);
+            this.btn_logout.Location = new System.Drawing.Point(9, 10);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(45, 29);
+            this.btn_logout.Size = new System.Drawing.Size(34, 24);
             this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_logout.TabIndex = 4;
             this.btn_logout.TabStop = false;
@@ -144,9 +150,10 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(63, 18);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(47, 15);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(84, 20);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(72, 17);
             this.bunifuCustomLabel1.TabIndex = 5;
             this.bunifuCustomLabel1.Text = "Đăng xuất";
             // 
@@ -159,10 +166,10 @@
             // 
             // frmGiaoDien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1213, 590);
+            this.ClientSize = new System.Drawing.Size(910, 479);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.exit_app);
@@ -171,7 +178,6 @@
             this.Controls.Add(this.gunaCircleButton1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmGiaoDien";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
