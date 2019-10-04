@@ -10,7 +10,7 @@ namespace QLthuvien
     class ConnectString
     {
         public string getConnectionString(int value)
-        {
+        {   
             if(value == 0)
             {
                 return @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
