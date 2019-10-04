@@ -35,14 +35,17 @@
             this.btTimKiem = new System.Windows.Forms.Button();
             this.btThemSach = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbQLTuaSach
             // 
+            this.lbQLTuaSach.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lbQLTuaSach.Font = new System.Drawing.Font("Times New Roman", 24F);
-            this.lbQLTuaSach.ForeColor = System.Drawing.Color.Red;
-            this.lbQLTuaSach.Location = new System.Drawing.Point(0, 1);
+            this.lbQLTuaSach.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbQLTuaSach.Location = new System.Drawing.Point(0, 0);
             this.lbQLTuaSach.Name = "lbQLTuaSach";
             this.lbQLTuaSach.Size = new System.Drawing.Size(981, 63);
             this.lbQLTuaSach.TabIndex = 0;
@@ -51,19 +54,19 @@
             // 
             // tbTimKiem
             // 
-            this.tbTimKiem.Location = new System.Drawing.Point(618, 110);
+            this.tbTimKiem.Location = new System.Drawing.Point(6, 205);
             this.tbTimKiem.Multiline = true;
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(225, 35);
+            this.tbTimKiem.Size = new System.Drawing.Size(175, 42);
             this.tbTimKiem.TabIndex = 2;
             // 
             // btXoasach
             // 
             this.btXoasach.BackgroundImage = global::QLthuvien.Properties.Resources.xoasach;
             this.btXoasach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btXoasach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btXoasach.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoasach.ForeColor = System.Drawing.Color.White;
-            this.btXoasach.Location = new System.Drawing.Point(32, 332);
+            this.btXoasach.Location = new System.Drawing.Point(29, 125);
             this.btXoasach.Name = "btXoasach";
             this.btXoasach.Size = new System.Drawing.Size(175, 41);
             this.btXoasach.TabIndex = 1;
@@ -74,9 +77,9 @@
             // 
             this.btSuaSach.BackgroundImage = global::QLthuvien.Properties.Resources.suasach;
             this.btSuaSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btSuaSach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btSuaSach.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSuaSach.ForeColor = System.Drawing.Color.White;
-            this.btSuaSach.Location = new System.Drawing.Point(32, 276);
+            this.btSuaSach.Location = new System.Drawing.Point(29, 78);
             this.btSuaSach.Name = "btSuaSach";
             this.btSuaSach.Size = new System.Drawing.Size(175, 41);
             this.btSuaSach.TabIndex = 1;
@@ -85,37 +88,50 @@
             // 
             // btTimKiem
             // 
-            this.btTimKiem.BackgroundImage = global::QLthuvien.Properties.Resources.search;
+            this.btTimKiem.BackgroundImage = global::QLthuvien.Properties.Resources.iconsearch;
             this.btTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btTimKiem.Location = new System.Drawing.Point(847, 110);
+            this.btTimKiem.Location = new System.Drawing.Point(187, 205);
             this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(93, 35);
+            this.btTimKiem.Size = new System.Drawing.Size(38, 42);
             this.btTimKiem.TabIndex = 4;
-            this.btTimKiem.Text = "         Tìm kiếm";
             this.btTimKiem.UseVisualStyleBackColor = true;
             // 
             // btThemSach
             // 
             this.btThemSach.BackgroundImage = global::QLthuvien.Properties.Resources.themsach;
             this.btThemSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btThemSach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btThemSach.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThemSach.ForeColor = System.Drawing.Color.White;
-            this.btThemSach.Location = new System.Drawing.Point(32, 216);
+            this.btThemSach.Location = new System.Drawing.Point(29, 31);
             this.btThemSach.Name = "btThemSach";
             this.btThemSach.Size = new System.Drawing.Size(175, 41);
             this.btThemSach.TabIndex = 1;
-            this.btThemSach.Text = "    Sửa tựa sách";
+            this.btThemSach.Text = "       Thêm tựa sách";
             this.btThemSach.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(238, 172);
+            this.dataGridView1.Location = new System.Drawing.Point(231, 55);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(750, 500);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel1.Controls.Add(this.btThemSach);
+            this.panel1.Controls.Add(this.btSuaSach);
+            this.panel1.Controls.Add(this.btTimKiem);
+            this.panel1.Controls.Add(this.btXoasach);
+            this.panel1.Controls.Add(this.tbTimKiem);
+            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(235, 503);
+            this.panel1.TabIndex = 6;
             // 
             // FormTuaSach
             // 
@@ -123,19 +139,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(981, 552);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btTimKiem);
-            this.Controls.Add(this.tbTimKiem);
-            this.Controls.Add(this.btXoasach);
-            this.Controls.Add(this.btThemSach);
-            this.Controls.Add(this.btSuaSach);
             this.Controls.Add(this.lbQLTuaSach);
             this.Name = "FormTuaSach";
             this.Text = "FormTuaSach";
             this.Load += new System.EventHandler(this.FormTuaSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -148,5 +161,6 @@
         private System.Windows.Forms.Button btTimKiem;
         private System.Windows.Forms.Button btThemSach;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
