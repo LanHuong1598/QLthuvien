@@ -17,5 +17,7 @@ namespace QLthuvien.GUI
 
             InitializeComponent();
         }
+
+        
     }
 }

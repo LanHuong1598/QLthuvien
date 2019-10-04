@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.lbQLTuaSach = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.btXoasach = new System.Windows.Forms.Button();
+            this.btSuaSach = new System.Windows.Forms.Button();
+            this.btTimKiem = new System.Windows.Forms.Button();
+            this.btThemSach = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbQLTuaSach
@@ -48,68 +49,73 @@
             this.lbQLTuaSach.Text = "QUẢN LÝ TỰA SÁCH";
             this.lbQLTuaSach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // tbTimKiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(618, 110);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 35);
-            this.textBox1.TabIndex = 2;
+            this.tbTimKiem.Location = new System.Drawing.Point(618, 110);
+            this.tbTimKiem.Multiline = true;
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(225, 35);
+            this.tbTimKiem.TabIndex = 2;
             // 
-            // button3
+            // btXoasach
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(32, 332);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 41);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "     Xóa tựa sách";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btXoasach.BackgroundImage = global::QLthuvien.Properties.Resources.xoasach;
+            this.btXoasach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btXoasach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btXoasach.ForeColor = System.Drawing.Color.White;
+            this.btXoasach.Location = new System.Drawing.Point(32, 332);
+            this.btXoasach.Name = "btXoasach";
+            this.btXoasach.Size = new System.Drawing.Size(175, 41);
+            this.btXoasach.TabIndex = 1;
+            this.btXoasach.Text = "     Xóa tựa sách";
+            this.btXoasach.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btSuaSach
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(32, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 41);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "    Sửa tựa sách";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSuaSach.BackgroundImage = global::QLthuvien.Properties.Resources.suasach;
+            this.btSuaSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btSuaSach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btSuaSach.ForeColor = System.Drawing.Color.White;
+            this.btSuaSach.Location = new System.Drawing.Point(32, 276);
+            this.btSuaSach.Name = "btSuaSach";
+            this.btSuaSach.Size = new System.Drawing.Size(175, 41);
+            this.btSuaSach.TabIndex = 1;
+            this.btSuaSach.Text = "    Sửa tựa sách";
+            this.btSuaSach.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btTimKiem
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(32, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "     Thêm tựa sách";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btTimKiem.BackgroundImage = global::QLthuvien.Properties.Resources.search;
+            this.btTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btTimKiem.Location = new System.Drawing.Point(847, 110);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(93, 35);
+            this.btTimKiem.TabIndex = 4;
+            this.btTimKiem.Text = "         Tìm kiếm";
+            this.btTimKiem.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btThemSach
             // 
-            this.button4.Location = new System.Drawing.Point(40, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btThemSach.BackgroundImage = global::QLthuvien.Properties.Resources.themsach;
+            this.btThemSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btThemSach.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btThemSach.ForeColor = System.Drawing.Color.White;
+            this.btThemSach.Location = new System.Drawing.Point(32, 216);
+            this.btThemSach.Name = "btThemSach";
+            this.btThemSach.Size = new System.Drawing.Size(175, 41);
+            this.btThemSach.TabIndex = 1;
+            this.btThemSach.Text = "    Sửa tựa sách";
+            this.btThemSach.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // dataGridView1
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(849, 110);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 35);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(238, 172);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(743, 378);
+            this.dataGridView1.TabIndex = 5;
             // 
             // FormTuaSach
             // 
@@ -117,15 +123,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(981, 552);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btTimKiem);
+            this.Controls.Add(this.tbTimKiem);
+            this.Controls.Add(this.btXoasach);
+            this.Controls.Add(this.btThemSach);
+            this.Controls.Add(this.btSuaSach);
             this.Controls.Add(this.lbQLTuaSach);
             this.Name = "FormTuaSach";
             this.Text = "FormTuaSach";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,11 +141,11 @@
         #endregion
 
         private System.Windows.Forms.Label lbQLTuaSach;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btSuaSach;
+        private System.Windows.Forms.Button btXoasach;
+        private System.Windows.Forms.TextBox tbTimKiem;
+        private System.Windows.Forms.Button btTimKiem;
+        private System.Windows.Forms.Button btThemSach;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
