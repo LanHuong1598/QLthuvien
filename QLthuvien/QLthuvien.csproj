@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMuonTra.Designer.cs">
+      <DependentUpon>FormMuonTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormTuaSach.cs">
       <SubType>Form</SubType>
     </Compile>
