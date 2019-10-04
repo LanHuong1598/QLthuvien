@@ -132,6 +132,7 @@
             this.Controls.Add(this.lbQLTuaSach);
             this.Name = "FormTuaSach";
             this.Text = "FormTuaSach";
+            this.Load += new System.EventHandler(this.FormTuaSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
