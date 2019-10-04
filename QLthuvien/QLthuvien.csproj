@@ -170,6 +170,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Img\avatar.png" />
     <Content Include="Img\background.jpg" />
     <Content Include="Img\delete.png" />
     <Content Include="Img\doc_gia.jpg" />
