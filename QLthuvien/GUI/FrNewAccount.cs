@@ -16,8 +16,9 @@ namespace QLthuvien.GUI
         {
             InitializeComponent();
           //  this.WindowState = FormWindowState.Minimized;
-            MaximizeBox = false;
-            
+            MaximizeBox = false;    
+                
+
         }
 
         private void btn_create_Click(object sender, EventArgs e)
