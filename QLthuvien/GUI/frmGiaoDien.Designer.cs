@@ -33,13 +33,13 @@
             this.exit_app = new Guna.UI.WinForms.GunaControlBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.gunaImageButton3 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.btn_logout = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btn_logout)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,63 +79,6 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // gunaImageButton3
-            // 
-            this.gunaImageButton3.BackgroundImage = global::QLthuvien.Properties.Resources.online_banking;
-            this.gunaImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaImageButton3.Image = null;
-            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton3.Location = new System.Drawing.Point(639, 150);
-            this.gunaImageButton3.Name = "gunaImageButton3";
-            this.gunaImageButton3.OnHoverImage = null;
-            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton3.Size = new System.Drawing.Size(150, 139);
-            this.gunaImageButton3.TabIndex = 8;
-            // 
-            // gunaImageButton2
-            // 
-            this.gunaImageButton2.BackgroundImage = global::QLthuvien.Properties.Resources.doc_gia;
-            this.gunaImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaImageButton2.Image = null;
-            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton2.Location = new System.Drawing.Point(375, 162);
-            this.gunaImageButton2.Name = "gunaImageButton2";
-            this.gunaImageButton2.OnHoverImage = null;
-            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton2.Size = new System.Drawing.Size(150, 139);
-            this.gunaImageButton2.TabIndex = 7;
-            this.gunaImageButton2.Click += new System.EventHandler(this.gunaImageButton2_Click);
-            // 
-            // gunaImageButton1
-            // 
-            this.gunaImageButton1.BackgroundImage = global::QLthuvien.Properties.Resources.icons8_book_shelf_100;
-            this.gunaImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaImageButton1.Image = null;
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton1.Location = new System.Drawing.Point(141, 162);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = null;
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Size = new System.Drawing.Size(150, 139);
-            this.gunaImageButton1.TabIndex = 6;
-            this.gunaImageButton1.Tag = "";
-            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.BackColor = System.Drawing.Color.White;
-            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
-            this.btn_logout.ImageActive = null;
-            this.btn_logout.Location = new System.Drawing.Point(9, 10);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(49, 56);
-            this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_logout.TabIndex = 4;
-            this.btn_logout.TabStop = false;
-            this.btn_logout.Zoom = 10;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -166,6 +109,66 @@
             this.label3.Size = new System.Drawing.Size(140, 21);
             this.label3.TabIndex = 11;
             this.label3.Text = "Quản lý mượn trả";
+            // 
+            // gunaImageButton3
+            // 
+            this.gunaImageButton3.BackgroundImage = global::QLthuvien.Properties.Resources.online_banking;
+            this.gunaImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaImageButton3.Image = null;
+            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton3.Location = new System.Drawing.Point(639, 150);
+            this.gunaImageButton3.Name = "gunaImageButton3";
+            this.gunaImageButton3.OnHoverImage = null;
+            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton3.Size = new System.Drawing.Size(150, 139);
+            this.gunaImageButton3.TabIndex = 8;
+            // 
+            // gunaImageButton2
+            // 
+            this.gunaImageButton2.BackgroundImage = global::QLthuvien.Properties.Resources.doc_gia;
+            this.gunaImageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaImageButton2.Image = null;
+            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton2.Location = new System.Drawing.Point(375, 162);
+            this.gunaImageButton2.Name = "gunaImageButton2";
+            this.gunaImageButton2.OnHoverImage = null;
+            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton2.Size = new System.Drawing.Size(150, 139);
+            this.gunaImageButton2.TabIndex = 7;
+            this.gunaImageButton2.Click += new System.EventHandler(this.gunaImageButton2_Click);
+            // 
+            // gunaImageButton1
+            // 
+            this.gunaImageButton1.BackgroundImage = global::QLthuvien.Properties.Resources.icons8_book_shelf_100;
+            this.gunaImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaImageButton1.Image = null;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(141, 162);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(150, 139);
+            this.gunaImageButton1.TabIndex = 6;
+            this.gunaImageButton1.Tag = "";
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.BackColor = System.Drawing.Color.White;
+            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
+            this.btn_logout.ImageActive = null;
+            this.btn_logout.Location = new System.Drawing.Point(9, 10);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(49, 56);
+            this.btn_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_logout.TabIndex = 4;
+            this.btn_logout.TabStop = false;
+            this.btn_logout.Zoom = 10;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // frmGiaoDien
             // 
