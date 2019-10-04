@@ -167,6 +167,9 @@
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
+    <None Include="Resources\delete-photo.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\technics.png" />
     <None Include="Resources\search1.png" />
     <None Include="Resources\search.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

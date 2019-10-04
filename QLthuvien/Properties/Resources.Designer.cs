@@ -63,6 +63,26 @@ namespace QLthuvien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_photo {
+            get {
+                object obj = ResourceManager.GetObject("delete-photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doc_gia {
             get {
                 object obj = ResourceManager.GetObject("doc_gia", resourceCulture);
@@ -106,6 +126,16 @@ namespace QLthuvien.Properties {
         internal static System.Drawing.Bitmap suasach {
             get {
                 object obj = ResourceManager.GetObject("suasach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap technics {
+            get {
+                object obj = ResourceManager.GetObject("technics", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
