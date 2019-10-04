@@ -93,6 +93,16 @@ namespace QLthuvien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_book_shelf_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-book-shelf-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconsearch {
             get {
                 object obj = ResourceManager.GetObject("iconsearch", resourceCulture);
@@ -106,6 +116,16 @@ namespace QLthuvien.Properties {
         internal static System.Drawing.Bitmap iconsearch1 {
             get {
                 object obj = ResourceManager.GetObject("iconsearch1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap online_banking {
+            get {
+                object obj = ResourceManager.GetObject("online-banking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

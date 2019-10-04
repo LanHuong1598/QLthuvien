@@ -33,10 +33,27 @@ namespace QLthuvien.GUI
             this.Close();
         }
 
-        private void gunaCircleButton1_Click(object sender, EventArgs e)
+      
+
+        private void label2_Click(object sender, EventArgs e)
         {
-            FormTuaSach a = new FormTuaSach();
+
+        }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            FormTuaSach fr = new FormTuaSach();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaImageButton2_Click(object sender, EventArgs e)
+        {
+            frmManagerialPerson a = new frmManagerialPerson();
+            this.Hide();
             a.ShowDialog();
+            this.Show();
         }
     }
 }
