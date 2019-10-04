@@ -28,7 +28,7 @@ namespace QLthuvien.GUI
             using (SqlConnection connect = new SqlConnection(con))
             {
 
-                connect.Open();
+                connect.Open();     
                 SqlDataAdapter apter = new SqlDataAdapter(query, con);
                 apter.Fill(data);
                 connect.Close();      
