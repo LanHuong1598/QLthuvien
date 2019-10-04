@@ -32,5 +32,11 @@ namespace QLthuvien.GUI
         {
             this.Close();
         }
+
+        private void gunaCircleButton1_Click(object sender, EventArgs e)
+        {
+            FormTuaSach a = new FormTuaSach();
+            a.ShowDialog();
+        }
     }
 }
