@@ -31,7 +31,7 @@ namespace QLthuvien
                     connect.Open();
                     connect.Close();
                 }
-                return 1;
+                return 1;   
             }
             catch
             {
