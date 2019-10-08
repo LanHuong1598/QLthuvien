@@ -20,8 +20,9 @@ namespace QLthuvien.GUI
         }
         void load()
         {
-            conectionString = cnn.getConnectionString(1);
 
+            conectionString = cnn.getConnectionString(1);
+             
         }
         private void FormMuonTra_Load(object sender, EventArgs e)
         {
