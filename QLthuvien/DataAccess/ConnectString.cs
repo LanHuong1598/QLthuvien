@@ -14,6 +14,7 @@ namespace QLthuvien
             if(value == 0)
             {
                 return @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                //return @"Data Source=DESKTOP-SASFC24\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
             }
             else
             {

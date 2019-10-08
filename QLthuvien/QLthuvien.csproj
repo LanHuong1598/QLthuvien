@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormAddTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddTuaSach.Designer.cs">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormTuaSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAddTuaSach.resx">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTuaSach.resx">
       <DependentUpon>FormTuaSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +176,8 @@
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
+    <None Include="Resources\save.jpg" />
+    <None Include="Resources\sach.png" />
     <None Include="Resources\loupe.png" />
     <None Include="Resources\online-banking.png" />
     <None Include="Resources\icons8-book-shelf-100.png" />
