@@ -13,6 +13,8 @@ namespace QLthuvien.GUI
 {
     public partial class FormBanDoc : Form    
     {
+        public static string Mabandoc { get; private set; }
+
         public FormBanDoc()
         {
             InitializeComponent();
@@ -61,7 +63,7 @@ namespace QLthuvien.GUI
             posClicked = showData.SelectedRows[0].Index;
             DataGridViewRow temp = this.showData.Rows[posClicked];
             string Ma = temp.Cells[0].Value.ToString();
-            //FormBanDoc.Mabandoc = Ma;
+            FormBanDoc.Mabandoc = Ma;
             string ten = temp.Cells[1].Value.ToString();
            // FormBanDoc.Tenbandoc = ten;
         }
@@ -160,6 +162,103 @@ namespace QLthuvien.GUI
                 connection.Close();
 
             }
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                delete_docgia(FormBanDoc.Mabandoc);
+                MessageBox.Show("Xóa thành công");
+                initData();
+                
+
+            }
+            catch
+            {
+                MessageBox.Show("Xóa không thành công");
+            }
+        }
+
+        private void showData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+        }
+
+        private void showData_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
+            string ten = temp.Cells[1].Value.ToString();
         }
     }
 }

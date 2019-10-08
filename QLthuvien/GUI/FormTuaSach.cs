@@ -127,5 +127,35 @@ namespace QLthuvien.GUI
             FormTuaSach.idtuasach = Ma;
             //FormBanDoc.Tenbandoc = ten;
         }
+
+        private void gunaDataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = gunaDataGridView1.SelectedRows[0].Index;
+            DataGridViewRow temp = this.gunaDataGridView1.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormTuaSach.idtuasach = Ma;
+            //FormBanDoc.Tenbandoc = ten;
+        }
+
+        private void gunaDataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = gunaDataGridView1.SelectedRows[0].Index;
+            DataGridViewRow temp = this.gunaDataGridView1.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormTuaSach.idtuasach = Ma;
+            //FormBanDoc.Tenbandoc = ten;
+        }
+
+        private void gunaDataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = gunaDataGridView1.SelectedRows[0].Index;
+            DataGridViewRow temp = this.gunaDataGridView1.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormTuaSach.idtuasach = Ma;
+            //FormBanDoc.Tenbandoc = ten;
+        }
     }
 }
