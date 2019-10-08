@@ -29,7 +29,7 @@ namespace QLthuvien
                 {
 
                     connect.Open();
-                    connect.Close();
+                    connect.Close();   
                 }
                 return 1;   
             }
