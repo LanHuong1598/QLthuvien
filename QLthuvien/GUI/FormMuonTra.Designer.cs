@@ -47,6 +47,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_title = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cb_MaDG = new Guna.UI.WinForms.GunaComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_avatar)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,6 +57,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cb_MaDG);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.gunaDateTimePicker1);
             this.panel1.Controls.Add(this.txt_SDT);
             this.panel1.Controls.Add(this.label5);
@@ -80,7 +84,7 @@
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(101, 216);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(101, 286);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -102,7 +106,7 @@
             this.txt_SDT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.txt_SDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_SDT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_SDT.Location = new System.Drawing.Point(101, 389);
+            this.txt_SDT.Location = new System.Drawing.Point(101, 459);
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.PasswordChar = '\0';
             this.txt_SDT.Size = new System.Drawing.Size(202, 41);
@@ -111,7 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 398);
+            this.label5.Location = new System.Drawing.Point(6, 468);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 17);
             this.label5.TabIndex = 9;
@@ -126,7 +130,7 @@
             this.txt_DiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.txt_DiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_DiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_DiaChi.Location = new System.Drawing.Point(101, 334);
+            this.txt_DiaChi.Location = new System.Drawing.Point(101, 404);
             this.txt_DiaChi.Name = "txt_DiaChi";
             this.txt_DiaChi.PasswordChar = '\0';
             this.txt_DiaChi.Size = new System.Drawing.Size(202, 41);
@@ -135,7 +139,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 345);
+            this.label4.Location = new System.Drawing.Point(6, 415);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 17);
             this.label4.TabIndex = 7;
@@ -150,7 +154,7 @@
             this.txt_GioiTinh.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.txt_GioiTinh.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_GioiTinh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_GioiTinh.Location = new System.Drawing.Point(101, 277);
+            this.txt_GioiTinh.Location = new System.Drawing.Point(101, 347);
             this.txt_GioiTinh.Name = "txt_GioiTinh";
             this.txt_GioiTinh.PasswordChar = '\0';
             this.txt_GioiTinh.Size = new System.Drawing.Size(202, 41);
@@ -159,7 +163,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 292);
+            this.label3.Location = new System.Drawing.Point(3, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 5;
@@ -168,7 +172,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 233);
+            this.label2.Location = new System.Drawing.Point(3, 303);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 3;
@@ -177,7 +181,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 174);
+            this.label1.Location = new System.Drawing.Point(3, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 17);
             this.label1.TabIndex = 2;
@@ -192,7 +196,7 @@
             this.txt_HoTen.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.txt_HoTen.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_HoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_HoTen.Location = new System.Drawing.Point(101, 159);
+            this.txt_HoTen.Location = new System.Drawing.Point(101, 229);
             this.txt_HoTen.Name = "txt_HoTen";
             this.txt_HoTen.PasswordChar = '\0';
             this.txt_HoTen.Size = new System.Drawing.Size(202, 41);
@@ -302,6 +306,33 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 187);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Mã độc giả:";
+            // 
+            // cb_MaDG
+            // 
+            this.cb_MaDG.BackColor = System.Drawing.Color.Transparent;
+            this.cb_MaDG.BaseColor = System.Drawing.Color.White;
+            this.cb_MaDG.BorderColor = System.Drawing.Color.Silver;
+            this.cb_MaDG.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_MaDG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_MaDG.FocusedColor = System.Drawing.Color.Empty;
+            this.cb_MaDG.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_MaDG.ForeColor = System.Drawing.Color.Black;
+            this.cb_MaDG.FormattingEnabled = true;
+            this.cb_MaDG.Location = new System.Drawing.Point(101, 180);
+            this.cb_MaDG.Name = "cb_MaDG";
+            this.cb_MaDG.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cb_MaDG.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cb_MaDG.Size = new System.Drawing.Size(202, 31);
+            this.cb_MaDG.TabIndex = 14;
+            // 
             // FormMuonTra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -339,5 +370,7 @@
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaGradientButton btn_title;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        protected internal System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaComboBox cb_MaDG;
     }
 }
