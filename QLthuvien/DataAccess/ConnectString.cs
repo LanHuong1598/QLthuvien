@@ -40,7 +40,7 @@ namespace QLthuvien
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
-                    connect.Open();
+                    connect.Open();    
                     connect.Close();
                 }
                 return 0;
