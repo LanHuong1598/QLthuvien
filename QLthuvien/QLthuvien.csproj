@@ -60,6 +60,9 @@
     <Compile Include="GUI\FormAddTuaSach.Designer.cs">
       <DependentUpon>FormAddTuaSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GUI\FormMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +127,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAddTuaSach.resx">
       <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMuonSach.resx">
+      <DependentUpon>FormMuonSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMuonTra.resx">
       <DependentUpon>FormMuonTra.cs</DependentUpon>

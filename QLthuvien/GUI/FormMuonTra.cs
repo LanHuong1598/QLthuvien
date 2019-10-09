@@ -80,5 +80,11 @@ namespace QLthuvien.GUI
             dtgv_MuonTra.DataSource = data_MuonTra;
             ThongTinDocGia(cb_MaDG.Text);
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            FormMuonSach fr = new FormMuonSach();
+            fr.Show();
+        }
     }
 }
