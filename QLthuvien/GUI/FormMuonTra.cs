@@ -20,21 +20,61 @@ namespace QLthuvien.GUI
         public FormMuonTra()
         {
             InitializeComponent();
+            conectionString = cnn.getConnectionString(Form1.checkConnectionString);
+            query = "select MaDG from DocGia";
+            conn = new SqlConnection(conectionString);
+            DataTable data_MaDG = new DataTable();
+            SqlDataAdapter adap = new SqlDataAdapter(query, conn);
+            adap.Fill(data_MaDG);
+            cb_MaDG.ValueMember = "MaDG";
+            cb_MaDG.DisplayMember = "MaDG";
+            cb_MaDG.DataSource = data_MaDG;
+            cb_MaDG.SelectedIndex = 0;
+            ThongTinDocGia(cb_MaDG.Text.ToString().Trim());
+            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+            {
+                button.Name = "ChangeRow";
+                button.HeaderText = "";
+                button.Text = "Trả";
+                button.UseColumnTextForButtonValue = true; //dont forget this line
+                this.dtgv_MuonTra.Columns.Add(button);
+            }
         }
+        private void FormMuonTra_Load(object sender, EventArgs e)
+        {
+            dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
+            dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
+            load();
+
+        }
+        void load()
+        {
+
+            
+        }
+
         void ThongTinDocGia(string MaDG)
         {
             try
             {
-                query = "select *from DocGia where MaDG='" + MaDG + "'";
-                conn = new SqlConnection(cnn.getConnectionString(1));
-                SqlDataAdapter adap = new SqlDataAdapter(query, conn);
-                DataTable data_DocGia = new DataTable();
-                adap.Fill(data_DocGia); 
-                txt_HoTen.Text = data_DocGia.Rows[0]["TenDG"].ToString();
-                txt_DiaChi.Text = data_DocGia.Rows[0]["DiaChi"].ToString();
-                txt_GioiTinh.Text = data_DocGia.Rows[0]["GioiTinh"].ToString();
-                txt_SDT.Text = data_DocGia.Rows[0]["SDT"].ToString();
-                dtp_NgaySinh.Value = Convert.ToDateTime(data_DocGia.Rows[0]["NgaySinh"].ToString());
+                query = "select * from DocGia where MaDG like '" + MaDG + "'";
+
+                ConnectString cnn = new ConnectString();
+                string con = cnn.getConnectionString(Form1.checkConnectionString);
+                DataTable data = new DataTable();
+
+                using (SqlConnection connect = new SqlConnection(con))
+                {
+                    connect.Open();
+                    SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                    apter.Fill(data);
+                    txt_HoTen.Text = data.Rows[0]["TenDG"].ToString();
+                    txt_DiaChi.Text = data.Rows[0]["DiaChi"].ToString();
+                    txt_GioiTinh.Text = data.Rows[0]["GioiTinh"].ToString();
+                    txt_SDT.Text = data.Rows[0]["SDT"].ToString();
+                    dtp_NgaySinh.Value = Convert.ToDateTime(data.Rows[0]["NgaySinh"].ToString());
+                    connect.Close();
+                }
             }
             catch
                 {
@@ -44,28 +84,7 @@ namespace QLthuvien.GUI
 
 
         }
-        void load()
-        {
-
-            conectionString = cnn.getConnectionString(Form1.checkConnectionString);
-            query = "select *from DocGia";
-            conn = new SqlConnection(conectionString);
-            DataTable data_MaDG = new DataTable();
-            SqlDataAdapter adap = new SqlDataAdapter(query,conn);
-            adap.Fill(data_MaDG);
-            cb_MaDG.ValueMember = "MaDG";
-            cb_MaDG.DisplayMember = "MaDG";
-            cb_MaDG.DataSource = data_MaDG;
-            cb_MaDG.SelectedIndex = 0;
-            ThongTinDocGia(cb_MaDG.Text.ToString().Trim());
-        }
-        private void FormMuonTra_Load(object sender, EventArgs e)
-        {
-            dtp_NgaySinh.Format = DateTimePickerFormat.Custom;
-            dtp_NgaySinh.CustomFormat = "dd/MM/yyyy";
-            load();
-
-        }
+        
 
         private void cb_MaDG_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -78,6 +97,8 @@ namespace QLthuvien.GUI
             DataTable data_MuonTra = new DataTable();
             adap.Fill(data_MuonTra);
             dtgv_MuonTra.DataSource = data_MuonTra;
+
+          
             ThongTinDocGia(cb_MaDG.Text);
         }
 
@@ -86,6 +107,51 @@ namespace QLthuvien.GUI
             FormMuonSach fr = new FormMuonSach();
             fr.setId(Convert.ToInt32(cb_MaDG.Text.Trim()));
             fr.Show();
+        }
+
+        private void dtgv_MuonTra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int posClicked;
+            posClicked = dtgv_MuonTra.SelectedRows[0].Index;
+            DataGridViewRow temp = this.dtgv_MuonTra.Rows[posClicked];
+            string MaPM = temp.Cells[1].Value.ToString();
+            string MaSach = temp.Cells[4].Value.ToString();
+          
+
+            if (dtgv_MuonTra.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Equals("Trả"))
+            {
+                DialogResult dialogResult = MessageBox.Show("Bạn muốn trả " + dtgv_MuonTra.Rows[e.RowIndex].Cells["Mã Sách"].Value.ToString() + " ? ", "Xác nhận", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    try
+                    {
+                        query = "update ChiTietMuon set tinhtrang = '" + 1 + "' " +
+                            "where MaPM = '" + MaPM +"' and MaCS = '"  + MaSach + "'" ;
+
+                        ConnectString cnn = new ConnectString();
+                        string con = cnn.getConnectionString(Form1.checkConnectionString);
+                        
+                        using (SqlConnection connect = new SqlConnection(con))
+                        {
+                            connect.Open();
+                            SqlCommand cmd = connect.CreateCommand();
+                            cmd.CommandText = query;
+                            cmd.ExecuteNonQuery();
+                            connect.Close();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    //do something else
+                }
+            }
         }
     }
 }
