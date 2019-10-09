@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormAddTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddTuaSach.Designer.cs">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAddTuaSach.resx">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMuonTra.resx">
       <DependentUpon>FormMuonTra.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +179,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sach.png" />
     <None Include="Img\avatar.png" />
     <Content Include="Img\background.jpg" />
     <Content Include="Img\delete.png" />
