@@ -177,6 +177,7 @@
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
+    <None Include="Resources\loupe.png" />
     <None Include="Resources\online-banking.png" />
     <None Include="Resources\icons8-book-shelf-100.png" />
     <None Include="Resources\delete-photo.png" />

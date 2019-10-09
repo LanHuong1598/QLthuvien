@@ -50,7 +50,7 @@ namespace QLthuvien.GUI
 
         private void gunaImageButton2_Click(object sender, EventArgs e)
         {
-            frmManagerialPerson a = new frmManagerialPerson();
+            FormBanDoc a = new FormBanDoc();
             this.Hide();
             a.ShowDialog();
             this.Show();
