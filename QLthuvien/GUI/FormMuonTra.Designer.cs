@@ -213,6 +213,7 @@
             // 
             // picture_avatar
             // 
+            /*
             this.picture_avatar.BaseColor = System.Drawing.Color.White;
             this.picture_avatar.Image = global::QLthuvien.Properties.Resources.avatar;
             this.picture_avatar.Location = new System.Drawing.Point(116, 0);
@@ -222,6 +223,7 @@
             this.picture_avatar.TabIndex = 0;
             this.picture_avatar.TabStop = false;
             this.picture_avatar.UseTransfarantBackground = false;
+            */
             // 
             // panel2
             // 
