@@ -41,7 +41,7 @@
             this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+           // this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.btTimKiem = new System.Windows.Forms.Button();
             this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel1.SuspendLayout();
