@@ -106,7 +106,9 @@ namespace QLthuvien.GUI
         {
             FormMuonSach fr = new FormMuonSach();
             fr.setId(Convert.ToInt32(cb_MaDG.Text.Trim()));
-            fr.Show();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
         }
 
         private void dtgv_MuonTra_CellContentClick(object sender, DataGridViewCellEventArgs e)

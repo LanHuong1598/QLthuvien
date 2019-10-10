@@ -42,7 +42,9 @@ namespace QLthuvien.GUI
         {
             gunaPanel2.Visible = false;
             frmadd_docgia fr = new frmadd_docgia();
+            this.Hide();
             fr.ShowDialog();
+            this.Show();
             initData();
         }
 
@@ -51,8 +53,10 @@ namespace QLthuvien.GUI
             
 
                 frmedit_docgia fr = new frmedit_docgia();
-                fr.ShowDialog();
-                initData();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
+            initData();
             
             
         }

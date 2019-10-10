@@ -61,7 +61,9 @@ namespace QLthuvien.GUI
         private void gunaImageButton3_Click(object sender, EventArgs e)
         {
             FormMuonTra fr = new FormMuonTra();
-            fr.Show();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
         }
     }
 }
