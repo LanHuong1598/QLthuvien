@@ -84,6 +84,7 @@ namespace QLthuvien.GUI
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             FormMuonSach fr = new FormMuonSach();
+            fr.setId(Convert.ToInt32(cb_MaDG.Text.Trim()));
             fr.Show();
         }
     }

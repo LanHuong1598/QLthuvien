@@ -63,6 +63,9 @@
     <Compile Include="GUI\FormMuonSach.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUI\FormMuonSach.Designer.cs">
+      <DependentUpon>FormMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
