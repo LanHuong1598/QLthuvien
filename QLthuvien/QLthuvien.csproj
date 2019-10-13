@@ -54,6 +54,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormAddTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAddTuaSach.Designer.cs">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMuonSach.Designer.cs">
+      <DependentUpon>FormMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAddTuaSach.resx">
+      <DependentUpon>FormAddTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMuonSach.resx">
+      <DependentUpon>FormMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMuonTra.resx">
       <DependentUpon>FormMuonTra.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,12 +188,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sach.png" />
+    <None Include="Img\avatar.png" />
+    <Content Include="Img\back-arrow.png" />
     <Content Include="Img\background.jpg" />
     <Content Include="Img\delete.png" />
     <Content Include="Img\doc_gia.jpg" />
     <Content Include="Img\plus.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
+    <None Include="Resources\loupe.png" />
     <None Include="Resources\online-banking.png" />
     <None Include="Resources\icons8-book-shelf-100.png" />
     <None Include="Resources\delete-photo.png" />

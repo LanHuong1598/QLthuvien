@@ -41,7 +41,6 @@ namespace QLthuvien.GUI
                 connect.Close();
             }
             gunaDataGridView1.DataSource = data.Tables[0];
-
         }
         private void datagridview_cell_click(object sender, DataGridViewCellEventArgs e)
         {
@@ -73,18 +72,30 @@ namespace QLthuvien.GUI
                     }
                 }
             }
-
+            gunaAdvenceButton2.Enabled = false;
             //   MessageBox.Show(e.RowIndex + " " + e.ColumnIndex + " ");
 
         }
         private void FormTuaSach_Load(object sender, EventArgs e)
         {
-
+            gunaAdvenceButton2.Enabled = true;
         }
 
         private void gunaGradientButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            FormAddTuaSach fr = new FormAddTuaSach();
+            fr.ShowDialog();
+        }
+
+        private void gunaAdvenceButton2_Click(object sender, EventArgs e)
+        {
+            FormAddTuaSach fr = new FormAddTuaSach();
+            fr.ShowDialog();
         }
     }
 }
