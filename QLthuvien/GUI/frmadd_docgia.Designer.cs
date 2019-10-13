@@ -311,6 +311,7 @@
             this.gunaButton2.TabIndex = 31;
             this.gunaButton2.Text = "Hủy";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // frmadd_docgia
             // 

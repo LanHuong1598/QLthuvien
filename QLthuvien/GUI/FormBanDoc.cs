@@ -13,6 +13,7 @@ namespace QLthuvien.GUI
 {
     public partial class FormBanDoc : Form
     {
+        public static string Mabandoc;
         public FormBanDoc()
         {
             InitializeComponent();
@@ -46,6 +47,15 @@ namespace QLthuvien.GUI
         {
             frmedit_docgia fr = new frmedit_docgia();
             fr.ShowDialog();
+        }
+
+        private void showData_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormBanDoc.Mabandoc = Ma;
         }
     }
 }
