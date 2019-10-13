@@ -56,7 +56,7 @@
             this.panel1.Controls.Add(this.btTimKiem);
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 504);
+            this.panel1.Size = new System.Drawing.Size(240, 504);
             this.panel1.TabIndex = 6;
             // 
             // gunaAdvenceButton4
@@ -172,7 +172,7 @@
             this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Size = new System.Drawing.Size(205, 43);
+            this.gunaTextBox1.Size = new System.Drawing.Size(154, 43);
             this.gunaTextBox1.TabIndex = 10;
             this.gunaTextBox1.Text = "Tìm kiếm tại đây";
             // 
@@ -183,9 +183,9 @@
             this.btTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btTimKiem.Location = new System.Drawing.Point(230, 276);
+            this.btTimKiem.Location = new System.Drawing.Point(169, 276);
             this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(38, 42);
+            this.btTimKiem.Size = new System.Drawing.Size(47, 42);
             this.btTimKiem.TabIndex = 4;
             this.btTimKiem.UseVisualStyleBackColor = true;
             // 
@@ -223,7 +223,7 @@
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.Location = new System.Drawing.Point(303, 67);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(239, 67);
             this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
@@ -231,7 +231,7 @@
             this.gunaDataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.RowTemplate.Height = 24;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1075, 486);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(867, 486);
             this.gunaDataGridView1.TabIndex = 9;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -282,7 +282,7 @@
             this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.WhiteSmoke;
             this.gunaGradientButton1.OnHoverImage = null;
             this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.Size = new System.Drawing.Size(1370, 66);
+            this.gunaGradientButton1.Size = new System.Drawing.Size(1104, 66);
             this.gunaGradientButton1.TabIndex = 10;
             this.gunaGradientButton1.Text = "QUẢN LÝ TỰA SÁCH";
             this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -293,11 +293,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1370, 553);
+            this.ClientSize = new System.Drawing.Size(1104, 553);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.gunaGradientButton1);
             this.Controls.Add(this.panel1);
             this.Name = "FormTuaSach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTuaSach";
             this.Load += new System.EventHandler(this.FormTuaSach_Load);
             this.panel1.ResumeLayout(false);
