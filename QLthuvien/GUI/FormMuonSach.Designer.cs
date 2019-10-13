@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMuonSach));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_MaDG = new Guna.UI.WinForms.GunaTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cb_TuaSach = new System.Windows.Forms.ComboBox();
-            this.dtp_NgayMuon = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_MuonSach = new Guna.UI.WinForms.GunaButton();
             this.txt_MaSach = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_MuonSach = new Guna.UI.WinForms.GunaButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dtp_NgayMuon = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.cb_TuaSach = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_MaDG = new Guna.UI.WinForms.GunaTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,77 +59,28 @@
             this.gunaPanel1.Size = new System.Drawing.Size(401, 446);
             this.gunaPanel1.TabIndex = 0;
             // 
-            // label1
+            // btn_MuonSach
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã độc giả:";
-            // 
-            // txt_MaDG
-            // 
-            this.txt_MaDG.BaseColor = System.Drawing.Color.White;
-            this.txt_MaDG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.txt_MaDG.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_MaDG.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_MaDG.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_MaDG.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_MaDG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_MaDG.Location = new System.Drawing.Point(132, 52);
-            this.txt_MaDG.Name = "txt_MaDG";
-            this.txt_MaDG.PasswordChar = '\0';
-            this.txt_MaDG.Size = new System.Drawing.Size(201, 32);
-            this.txt_MaDG.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tựa sách:";
-            // 
-            // cb_TuaSach
-            // 
-            this.cb_TuaSach.FormattingEnabled = true;
-            this.cb_TuaSach.Location = new System.Drawing.Point(132, 128);
-            this.cb_TuaSach.Name = "cb_TuaSach";
-            this.cb_TuaSach.Size = new System.Drawing.Size(201, 24);
-            this.cb_TuaSach.TabIndex = 3;
-            // 
-            // dtp_NgayMuon
-            // 
-            this.dtp_NgayMuon.BaseColor = System.Drawing.Color.White;
-            this.dtp_NgayMuon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.dtp_NgayMuon.CustomFormat = null;
-            this.dtp_NgayMuon.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtp_NgayMuon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtp_NgayMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtp_NgayMuon.ForeColor = System.Drawing.Color.Black;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(132, 253);
-            this.dtp_NgayMuon.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_NgayMuon.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
-            this.dtp_NgayMuon.OnHoverBaseColor = System.Drawing.Color.White;
-            this.dtp_NgayMuon.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtp_NgayMuon.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtp_NgayMuon.OnPressedColor = System.Drawing.Color.Black;
-            this.dtp_NgayMuon.Size = new System.Drawing.Size(201, 30);
-            this.dtp_NgayMuon.TabIndex = 4;
-            this.dtp_NgayMuon.Text = "Saturday, October 12, 2019";
-            this.dtp_NgayMuon.Value = new System.DateTime(2019, 10, 12, 23, 19, 39, 316);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 262);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Ngày mượn:";
+            this.btn_MuonSach.AnimationHoverSpeed = 0.07F;
+            this.btn_MuonSach.AnimationSpeed = 0.03F;
+            this.btn_MuonSach.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btn_MuonSach.BorderColor = System.Drawing.Color.Black;
+            this.btn_MuonSach.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_MuonSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_MuonSach.ForeColor = System.Drawing.Color.White;
+            this.btn_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("btn_MuonSach.Image")));
+            this.btn_MuonSach.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_MuonSach.Location = new System.Drawing.Point(132, 350);
+            this.btn_MuonSach.Name = "btn_MuonSach";
+            this.btn_MuonSach.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_MuonSach.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_MuonSach.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_MuonSach.OnHoverImage = null;
+            this.btn_MuonSach.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_MuonSach.Size = new System.Drawing.Size(201, 42);
+            this.btn_MuonSach.TabIndex = 8;
+            this.btn_MuonSach.Text = "Mượn sách";
+            this.btn_MuonSach.Click += new System.EventHandler(this.btn_MuonSach_Click);
             // 
             // txt_MaSach
             // 
@@ -155,28 +106,78 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Mã sách:";
             // 
-            // btn_MuonSach
+            // label3
             // 
-            this.btn_MuonSach.AnimationHoverSpeed = 0.07F;
-            this.btn_MuonSach.AnimationSpeed = 0.03F;
-            this.btn_MuonSach.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btn_MuonSach.BorderColor = System.Drawing.Color.Black;
-            this.btn_MuonSach.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_MuonSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_MuonSach.ForeColor = System.Drawing.Color.White;
-            this.btn_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("btn_MuonSach.Image")));
-            this.btn_MuonSach.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_MuonSach.Location = new System.Drawing.Point(132, 350);
-            this.btn_MuonSach.Name = "btn_MuonSach";
-            this.btn_MuonSach.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btn_MuonSach.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_MuonSach.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_MuonSach.OnHoverImage = null;
-            this.btn_MuonSach.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_MuonSach.Size = new System.Drawing.Size(201, 42);
-            this.btn_MuonSach.TabIndex = 8;
-            this.btn_MuonSach.Text = "Mượn sách";
-            this.btn_MuonSach.Click += new System.EventHandler(this.btn_MuonSach_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Ngày mượn:";
+            // 
+            // dtp_NgayMuon
+            // 
+            this.dtp_NgayMuon.BaseColor = System.Drawing.Color.White;
+            this.dtp_NgayMuon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.dtp_NgayMuon.CustomFormat = null;
+            this.dtp_NgayMuon.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtp_NgayMuon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtp_NgayMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_NgayMuon.ForeColor = System.Drawing.Color.Black;
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(132, 253);
+            this.dtp_NgayMuon.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_NgayMuon.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_NgayMuon.Name = "dtp_NgayMuon";
+            this.dtp_NgayMuon.OnHoverBaseColor = System.Drawing.Color.White;
+            this.dtp_NgayMuon.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtp_NgayMuon.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dtp_NgayMuon.OnPressedColor = System.Drawing.Color.Black;
+            this.dtp_NgayMuon.Size = new System.Drawing.Size(201, 30);
+            this.dtp_NgayMuon.TabIndex = 4;
+            this.dtp_NgayMuon.Text = "Saturday, October 12, 2019";
+            this.dtp_NgayMuon.Value = new System.DateTime(2019, 10, 12, 23, 19, 39, 316);
+            // 
+            // cb_TuaSach
+            // 
+            this.cb_TuaSach.FormattingEnabled = true;
+            this.cb_TuaSach.Location = new System.Drawing.Point(132, 128);
+            this.cb_TuaSach.Name = "cb_TuaSach";
+            this.cb_TuaSach.Size = new System.Drawing.Size(201, 24);
+            this.cb_TuaSach.TabIndex = 3;
+            this.cb_TuaSach.SelectedIndexChanged += new System.EventHandler(this.cb_TuaSach_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tựa sách:";
+            // 
+            // txt_MaDG
+            // 
+            this.txt_MaDG.BaseColor = System.Drawing.Color.White;
+            this.txt_MaDG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.txt_MaDG.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaDG.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_MaDG.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_MaDG.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_MaDG.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_MaDG.Location = new System.Drawing.Point(132, 52);
+            this.txt_MaDG.Name = "txt_MaDG";
+            this.txt_MaDG.PasswordChar = '\0';
+            this.txt_MaDG.Size = new System.Drawing.Size(201, 32);
+            this.txt_MaDG.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã độc giả:";
             // 
             // FormMuonSach
             // 

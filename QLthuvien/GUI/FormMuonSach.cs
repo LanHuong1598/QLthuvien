@@ -25,6 +25,30 @@ namespace QLthuvien.GUI
         {
             id = _id;
         }
+        string Check_MaTs(string TenTs)
+        {
+            string MaSach = "";
+            try {
+                
+                conn = new SqlConnection(cnn.getConnectionString(1));
+                DataTable data_Sach = new DataTable();
+                SqlCommand cmd = new SqlCommand("DS_Sach", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@TenTs", cb_TuaSach.Text.ToString().Trim());
+                adap = new SqlDataAdapter(cmd);
+                adap.Fill(data_Sach);
+                MaSach = data_Sach.Rows[0]["MaCS"].ToString();
+                
+            }
+            catch
+                {
+                MessageBox.Show("Không còn sách");
+                MaSach = "";
+            }
+            txt_MaSach.Text = MaSach;
+            return MaSach;
+
+        }
         void load()
         {
             try
@@ -39,6 +63,7 @@ namespace QLthuvien.GUI
                 cb_TuaSach.DataSource = data_sach;
 
                 txt_MaDG.Text = id.ToString();
+                txt_MaSach.Text = Check_MaTs(cb_TuaSach.Text.ToString());
             }
             catch
             {
@@ -60,6 +85,11 @@ namespace QLthuvien.GUI
         private void btn_MuonSach_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cb_TuaSach_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Check_MaTs(cb_TuaSach.Text.ToString());
         }
     }
 }
