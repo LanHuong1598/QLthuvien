@@ -49,6 +49,40 @@ namespace QLthuvien.GUI
             return MaSach;
 
         }
+        string Check_MaPhieu()
+        {
+            string MaPhieu = "";
+            try
+            {
+                conn = new SqlConnection(cnn.getConnectionString(1));
+                query = "select *from PhieuMuon order by MaPM desc";
+                adap = new SqlDataAdapter(query, conn);
+                DataTable data_PM = new DataTable();
+                adap.Fill(data_PM);
+                string temp = "";
+                temp = data_PM.Rows[0]["MaPM"].ToString().Trim();
+                for(int i=0;i<temp.Length;i++)
+                {
+                    
+                    if(temp[i]>=48 && temp[i]<=57)
+                    {
+                        MaPhieu = MaPhieu + temp[i].ToString();
+                    }
+                    else
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            catch
+            {
+
+            }
+            int MaP = Convert.ToInt32(MaPhieu) + 1;
+            MaPhieu = "PM" + MaP.ToString();
+            return MaPhieu;
+        }
         void load()
         {
             try
@@ -64,6 +98,7 @@ namespace QLthuvien.GUI
 
                 txt_MaDG.Text = id.ToString();
                 txt_MaSach.Text = Check_MaTs(cb_TuaSach.Text.ToString());
+                txt_MaPhieu.Text = Check_MaPhieu();
             }
             catch
             {
@@ -84,7 +119,33 @@ namespace QLthuvien.GUI
 
         private void btn_MuonSach_Click(object sender, EventArgs e)
         {
+            if(txt_MaSach.Text.Trim()!="")
+            {
+                try
+                {
+                    conn = new SqlConnection(cnn.getConnectionString(1));
+                    SqlCommand cmd = new SqlCommand("dbo.MuonSach", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@TenSach", cb_TuaSach.Text.Trim());
+                    cmd.Parameters.AddWithValue("@MaSach", txt_MaSach.Text.Trim());
+                    cmd.Parameters.AddWithValue("@MaDG", txt_MaDG.Text.Trim());
+                    cmd.Parameters.AddWithValue("@NgayMuon", dtp_NgayMuon.Value);
+                    cmd.Parameters.AddWithValue("@MaPM", txt_MaPhieu.Text.Trim());
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Mượn thành công!");
 
+                }
+                catch
+                {
+                    MessageBox.Show("Mượn sách thất bại");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không còn sách mượn!");
+            }
+            
         }
 
         private void cb_TuaSach_SelectedIndexChanged(object sender, EventArgs e)

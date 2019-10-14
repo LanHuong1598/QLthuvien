@@ -39,12 +39,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_MaDG = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_MaPhieu = new Guna.UI.WinForms.GunaTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gunaPanel1.Controls.Add(this.txt_MaPhieu);
+            this.gunaPanel1.Controls.Add(this.label5);
             this.gunaPanel1.Controls.Add(this.btn_MuonSach);
             this.gunaPanel1.Controls.Add(this.txt_MaSach);
             this.gunaPanel1.Controls.Add(this.label4);
@@ -63,16 +67,16 @@
             // 
             this.btn_MuonSach.AnimationHoverSpeed = 0.07F;
             this.btn_MuonSach.AnimationSpeed = 0.03F;
-            this.btn_MuonSach.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btn_MuonSach.BaseColor = System.Drawing.Color.DodgerBlue;
             this.btn_MuonSach.BorderColor = System.Drawing.Color.Black;
             this.btn_MuonSach.FocusedColor = System.Drawing.Color.Empty;
             this.btn_MuonSach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_MuonSach.ForeColor = System.Drawing.Color.White;
             this.btn_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("btn_MuonSach.Image")));
             this.btn_MuonSach.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_MuonSach.Location = new System.Drawing.Point(132, 350);
+            this.btn_MuonSach.Location = new System.Drawing.Point(100, 356);
             this.btn_MuonSach.Name = "btn_MuonSach";
-            this.btn_MuonSach.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_MuonSach.OnHoverBaseColor = System.Drawing.Color.RoyalBlue;
             this.btn_MuonSach.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_MuonSach.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_MuonSach.OnHoverImage = null;
@@ -91,7 +95,7 @@
             this.txt_MaSach.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_MaSach.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_MaSach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_MaSach.Location = new System.Drawing.Point(132, 181);
+            this.txt_MaSach.Location = new System.Drawing.Point(157, 217);
             this.txt_MaSach.Name = "txt_MaSach";
             this.txt_MaSach.PasswordChar = '\0';
             this.txt_MaSach.Size = new System.Drawing.Size(201, 32);
@@ -100,7 +104,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 196);
+            this.label4.Location = new System.Drawing.Point(32, 229);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 6;
@@ -109,7 +113,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 262);
+            this.label3.Location = new System.Drawing.Point(38, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 17);
             this.label3.TabIndex = 5;
@@ -124,7 +128,7 @@
             this.dtp_NgayMuon.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp_NgayMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp_NgayMuon.ForeColor = System.Drawing.Color.Black;
-            this.dtp_NgayMuon.Location = new System.Drawing.Point(132, 253);
+            this.dtp_NgayMuon.Location = new System.Drawing.Point(157, 274);
             this.dtp_NgayMuon.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp_NgayMuon.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
@@ -140,7 +144,7 @@
             // cb_TuaSach
             // 
             this.cb_TuaSach.FormattingEnabled = true;
-            this.cb_TuaSach.Location = new System.Drawing.Point(132, 128);
+            this.cb_TuaSach.Location = new System.Drawing.Point(157, 164);
             this.cb_TuaSach.Name = "cb_TuaSach";
             this.cb_TuaSach.Size = new System.Drawing.Size(201, 24);
             this.cb_TuaSach.TabIndex = 3;
@@ -149,7 +153,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 128);
+            this.label2.Location = new System.Drawing.Point(32, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 17);
             this.label2.TabIndex = 2;
@@ -164,7 +168,7 @@
             this.txt_MaDG.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_MaDG.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_MaDG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_MaDG.Location = new System.Drawing.Point(132, 52);
+            this.txt_MaDG.Location = new System.Drawing.Point(157, 110);
             this.txt_MaDG.Name = "txt_MaDG";
             this.txt_MaDG.PasswordChar = '\0';
             this.txt_MaDG.Size = new System.Drawing.Size(201, 32);
@@ -173,11 +177,35 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 67);
+            this.label1.Location = new System.Drawing.Point(32, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã độc giả:";
+            // 
+            // txt_MaPhieu
+            // 
+            this.txt_MaPhieu.BaseColor = System.Drawing.Color.White;
+            this.txt_MaPhieu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.txt_MaPhieu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaPhieu.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_MaPhieu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_MaPhieu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_MaPhieu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_MaPhieu.Location = new System.Drawing.Point(157, 51);
+            this.txt_MaPhieu.Name = "txt_MaPhieu";
+            this.txt_MaPhieu.PasswordChar = '\0';
+            this.txt_MaPhieu.Size = new System.Drawing.Size(201, 32);
+            this.txt_MaPhieu.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Mã phiếu mượn:";
             // 
             // FormMuonSach
             // 
@@ -207,5 +235,7 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaTextBox txt_MaDG;
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaTextBox txt_MaPhieu;
+        private System.Windows.Forms.Label label5;
     }
 }
