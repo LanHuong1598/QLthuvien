@@ -134,6 +134,7 @@ namespace QLthuvien.GUI
                     conn.Open();
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Mượn thành công!");
+                    this.Close();
 
                 }
                 catch
