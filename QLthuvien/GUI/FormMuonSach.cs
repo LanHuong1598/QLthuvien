@@ -12,126 +12,53 @@ namespace QLthuvien.GUI
 {
     public partial class FormMuonSach : Form
     {
-        int id;
+        ConnectString cnn=new ConnectString();
         SqlConnection conn;
-        ConnectString cnn = new ConnectString();
-        SqlDataAdapter adap;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private ComboBox cb_Cuonsach;
-        private Guna.UI.WinForms.GunaTextBox txt_MaDG;
-        private Label label3;
-        private Label label2;
-        private Label label1;
         string query = "";
+        SqlDataAdapter adap;
+        int id=0;
         public FormMuonSach()
         {
             InitializeComponent();
         }
-        public void setMaDG(int _id)
+        public void setId(int _id)
         {
-            _id = id;
+            id = _id;
         }
-
         void load()
         {
-            conn = new SqlConnection(cnn.getConnectionString(1));
-            query = "select *from TuaSach";
-            adap = new SqlDataAdapter(query, conn);
-            DataTable data_TuaSach = new DataTable();
-            adap.Fill(data_TuaSach);
-            cb_Cuonsach.ValueMember = "MaTS";
-            cb_Cuonsach.DisplayMember = "TenTS";
-            cb_Cuonsach.DataSource = data_TuaSach;
-            txt_MaDG.Text = id.ToString();
+            try
+            {
+                conn = new SqlConnection(cnn.getConnectionString(1));
+                query = "select *from TuaSach";
+                adap = new SqlDataAdapter(query, conn);
+                DataTable data_sach = new DataTable();
+                adap.Fill(data_sach);
+                cb_TuaSach.ValueMember = "MaTS";
+                cb_TuaSach.DisplayMember = "TenTS";
+                cb_TuaSach.DataSource = data_sach;
+
+                txt_MaDG.Text = id.ToString();
+            }
+            catch
+            {
+
+            }
         }
+
         private void FormMuonSach_Load(object sender, EventArgs e)
         {
+
+            txt_MaDG.Enabled = false;
+            txt_MaSach.Enabled = false;
+            dtp_NgayMuon.Format = DateTimePickerFormat.Custom;
+            dtp_NgayMuon.CustomFormat = "dd/MM/yyyy";
+
             load();
         }
 
-        private void InitializeComponent()
+        private void btn_MuonSach_Click(object sender, EventArgs e)
         {
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.cb_Cuonsach = new System.Windows.Forms.ComboBox();
-            this.txt_MaDG = new Guna.UI.WinForms.GunaTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gunaPanel1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Controls.Add(this.cb_Cuonsach);
-            this.gunaPanel1.Controls.Add(this.txt_MaDG);
-            this.gunaPanel1.Controls.Add(this.label3);
-            this.gunaPanel1.Controls.Add(this.label2);
-            this.gunaPanel1.Controls.Add(this.label1);
-            this.gunaPanel1.Location = new System.Drawing.Point(13, 13);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(611, 370);
-            this.gunaPanel1.TabIndex = 0;
-            // 
-            // cb_Cuonsach
-            // 
-            this.cb_Cuonsach.FormattingEnabled = true;
-            this.cb_Cuonsach.Location = new System.Drawing.Point(159, 82);
-            this.cb_Cuonsach.Name = "cb_Cuonsach";
-            this.cb_Cuonsach.Size = new System.Drawing.Size(160, 24);
-            this.cb_Cuonsach.TabIndex = 4;
-            // 
-            // txt_MaDG
-            // 
-            this.txt_MaDG.BaseColor = System.Drawing.Color.White;
-            this.txt_MaDG.BorderColor = System.Drawing.Color.Silver;
-            this.txt_MaDG.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_MaDG.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_MaDG.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_MaDG.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_MaDG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_MaDG.Location = new System.Drawing.Point(159, 33);
-            this.txt_MaDG.Name = "txt_MaDG";
-            this.txt_MaDG.PasswordChar = '\0';
-            this.txt_MaDG.Size = new System.Drawing.Size(160, 32);
-            this.txt_MaDG.TabIndex = 3;
-            this.txt_MaDG.Text = "gunaTextBox1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // FormMuonSach
-            // 
-            this.ClientSize = new System.Drawing.Size(636, 395);
-            this.Controls.Add(this.gunaPanel1);
-            this.Name = "FormMuonSach";
-            this.Text = "Mượn sách";
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaPanel1.PerformLayout();
-            this.ResumeLayout(false);
 
         }
     }
