@@ -28,21 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBanDoc));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.key_search = new Guna.UI.WinForms.GunaTextBox();
             this.showData = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.type_search = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.load_data_btn = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.showData)).BeginInit();
             this.gunaPanel1.SuspendLayout();
+            this.gunaPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -56,27 +60,27 @@
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Danh sách bạn đọc";
             // 
-            // gunaTextBox1
+            // key_search
             // 
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(908, 109);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Size = new System.Drawing.Size(210, 32);
-            this.gunaTextBox1.TabIndex = 6;
+            this.key_search.BaseColor = System.Drawing.Color.White;
+            this.key_search.BorderColor = System.Drawing.Color.Silver;
+            this.key_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.key_search.FocusedBaseColor = System.Drawing.Color.White;
+            this.key_search.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.key_search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.key_search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.key_search.Location = new System.Drawing.Point(168, 9);
+            this.key_search.Name = "key_search";
+            this.key_search.PasswordChar = '\0';
+            this.key_search.Size = new System.Drawing.Size(210, 32);
+            this.key_search.TabIndex = 6;
             // 
             // showData
             // 
             this.showData.AllowUserToAddRows = false;
             this.showData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.showData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.showData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.showData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -86,23 +90,23 @@
             this.showData.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.showData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.showData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.showData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.showData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.showData.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.showData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.showData.DefaultCellStyle = dataGridViewCellStyle6;
             this.showData.EnableHeadersVisualStyles = false;
             this.showData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(65)))), ((int)(((byte)(171)))));
             this.showData.Location = new System.Drawing.Point(307, 174);
@@ -159,7 +163,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.Black;
             this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(1124, 109);
+            this.gunaButton4.Location = new System.Drawing.Point(398, 9);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -169,6 +173,7 @@
             this.gunaButton4.Size = new System.Drawing.Size(122, 32);
             this.gunaButton4.TabIndex = 7;
             this.gunaButton4.Text = "Search";
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
             // gunaButton3
             // 
@@ -181,7 +186,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(52, 397);
+            this.gunaButton3.Location = new System.Drawing.Point(52, 366);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -191,6 +196,8 @@
             this.gunaButton3.Size = new System.Drawing.Size(205, 42);
             this.gunaButton3.TabIndex = 5;
             this.gunaButton3.Text = "Xóa độc giả";
+            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // gunaButton2
             // 
@@ -203,7 +210,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(52, 324);
+            this.gunaButton2.Location = new System.Drawing.Point(52, 318);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -213,6 +220,7 @@
             this.gunaButton2.Size = new System.Drawing.Size(205, 42);
             this.gunaButton2.TabIndex = 4;
             this.gunaButton2.Text = "Tìm kiếm độc giả";
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // gunaButton1
             // 
@@ -225,7 +233,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(52, 248);
+            this.gunaButton1.Location = new System.Drawing.Point(52, 270);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -236,6 +244,39 @@
             this.gunaButton1.TabIndex = 1;
             this.gunaButton1.Text = "Sửa thông tin độc giả";
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
+            // type_search
+            // 
+            this.type_search.BackColor = System.Drawing.Color.Transparent;
+            this.type_search.BaseColor = System.Drawing.Color.White;
+            this.type_search.BorderColor = System.Drawing.Color.Silver;
+            this.type_search.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.type_search.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.type_search.FocusedColor = System.Drawing.Color.Empty;
+            this.type_search.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.type_search.ForeColor = System.Drawing.Color.Black;
+            this.type_search.FormattingEnabled = true;
+            this.type_search.Items.AddRange(new object[] {
+            "Mã",
+            "Họ tên",
+            "Địa chỉ",
+            "Sđt"});
+            this.type_search.Location = new System.Drawing.Point(14, 9);
+            this.type_search.Name = "type_search";
+            this.type_search.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.type_search.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.type_search.Size = new System.Drawing.Size(136, 31);
+            this.type_search.TabIndex = 32;
+            // 
+            // gunaPanel2
+            // 
+            this.gunaPanel2.Controls.Add(this.type_search);
+            this.gunaPanel2.Controls.Add(this.key_search);
+            this.gunaPanel2.Controls.Add(this.gunaButton4);
+            this.gunaPanel2.Location = new System.Drawing.Point(708, 115);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(588, 43);
+            this.gunaPanel2.TabIndex = 33;
             // 
             // gunaAdvenceButton1
             // 
@@ -254,7 +295,7 @@
             this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(52, 174);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(52, 222);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -267,16 +308,47 @@
             this.gunaAdvenceButton1.Text = "Thêm mới độc giả";
             this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
+            // load_data_btn
+            // 
+            this.load_data_btn.AnimationHoverSpeed = 0.07F;
+            this.load_data_btn.AnimationSpeed = 0.03F;
+            this.load_data_btn.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.load_data_btn.BorderColor = System.Drawing.Color.Black;
+            this.load_data_btn.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.load_data_btn.CheckedBorderColor = System.Drawing.Color.Black;
+            this.load_data_btn.CheckedForeColor = System.Drawing.Color.White;
+            this.load_data_btn.CheckedImage = ((System.Drawing.Image)(resources.GetObject("load_data_btn.CheckedImage")));
+            this.load_data_btn.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.load_data_btn.FocusedColor = System.Drawing.Color.Empty;
+            this.load_data_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.load_data_btn.ForeColor = System.Drawing.Color.White;
+            this.load_data_btn.Image = ((System.Drawing.Image)(resources.GetObject("load_data_btn.Image")));
+            this.load_data_btn.ImageSize = new System.Drawing.Size(20, 20);
+            this.load_data_btn.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.load_data_btn.Location = new System.Drawing.Point(52, 174);
+            this.load_data_btn.Name = "load_data_btn";
+            this.load_data_btn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.load_data_btn.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.load_data_btn.OnHoverForeColor = System.Drawing.Color.White;
+            this.load_data_btn.OnHoverImage = null;
+            this.load_data_btn.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.load_data_btn.OnPressedColor = System.Drawing.Color.Black;
+            this.load_data_btn.Size = new System.Drawing.Size(205, 42);
+            this.load_data_btn.TabIndex = 34;
+            this.load_data_btn.Text = "Load dữ liệu";
+            this.load_data_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.load_data_btn.Click += new System.EventHandler(this.load_data_btn_Click);
+            // 
             // FormBanDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1308, 679);
+            this.Controls.Add(this.load_data_btn);
+            this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.showData);
-            this.Controls.Add(this.gunaButton4);
-            this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.gunaButton3);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton1);
@@ -290,20 +362,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.showData)).EndInit();
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
+            this.gunaPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton gunaButton3;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox key_search;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaDataGridView showData;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaComboBox type_search;
+        private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton load_data_btn;
     }
 }

@@ -22,11 +22,44 @@ namespace QLthuvien.GUI
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            
+            string Id = tex_MA_docgia.Text;
+            string name = Tex_tendocgia.Text;
+            DateTime date = ngay_sinh.Value;
+            string sdt = text_sdt.Text;
+            string gioitinh;
+            if (check_nam.Checked == true)
+            {
+                gioitinh = "Nam";
+            }
+            else
+            {
+                gioitinh = "Nữ";
+            }
+            string diachi = text_diachi.Text;
+            if (Id == "" || name == "")
+            {
+                MessageBox.Show("Vui lòng điền đủ thông tin Mã độc giả và tên độc giả!");
+                return;
+            }
+            else
+            {
+                int check = UpDate_data(Id, name, date, gioitinh, diachi, sdt, FormBanDoc.Mabandoc);
+                if (check == 1)
+                {
+                    MessageBox.Show("Update thành công");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Update không thành công, vui lòng kiểm tra lại!");
+                }
+
+            }
 
         }
         public void show()
         {
+            
             DataTable data = connectionTable(FormBanDoc.Mabandoc);
             tex_MA_docgia.Text = data.Rows[0]["MaDG"].ToString();
             Tex_tendocgia.Text = data.Rows[0]["TenDG"].ToString();
@@ -94,5 +127,7 @@ namespace QLthuvien.GUI
                 return 0;
             }
         }
+
+       
     }
 }
