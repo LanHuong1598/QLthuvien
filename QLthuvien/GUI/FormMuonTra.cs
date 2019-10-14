@@ -47,7 +47,7 @@ namespace QLthuvien.GUI
         void load()
         {
 
-            conectionString = cnn.getConnectionString(1);
+            conectionString = cnn.getConnectionString(Form1.checkConnectionString);
             query = "select *from DocGia";
             conn = new SqlConnection(conectionString);
             DataTable data_MaDG = new DataTable();
@@ -70,7 +70,7 @@ namespace QLthuvien.GUI
         private void cb_MaDG_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            conn = new SqlConnection(cnn.getConnectionString(1));
+            conn = new SqlConnection(cnn.getConnectionString(Form1.checkConnectionString));
             SqlCommand cmd = new SqlCommand("dbo.DS_MuonTra", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaDG", cb_MaDG.Text.Trim());
