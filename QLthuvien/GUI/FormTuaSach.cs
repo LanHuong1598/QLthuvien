@@ -29,7 +29,7 @@ namespace QLthuvien.GUI
 
             gunaDataGridView1.Columns.Clear();
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(1);
+            string con = cnn.getConnectionString(Form1.checkConnectionString);
             DataSet data = new DataSet();
 
             using (SqlConnection connect = new SqlConnection(con))

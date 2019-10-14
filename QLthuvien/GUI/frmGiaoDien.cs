@@ -15,6 +15,7 @@ namespace QLthuvien.GUI
         public frmGiaoDien()
         {
             InitializeComponent();
+            
         }
 
         private void gunaCircleButton2_Click(object sender, EventArgs e)
