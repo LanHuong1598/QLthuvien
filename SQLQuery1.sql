@@ -20,7 +20,7 @@ insert into PhieuMuon(MaDG,MaPM,NgayMuon)
 values(@MaDG,@MaPM,@NgayMuon)
 insert into ChiTietMuon(MaPM,MaCS) values(@MaPM,@MaDG)
 
-
+drop proc MuonSach
 
 select *from PhieuMuon order by MaPM desc
 
