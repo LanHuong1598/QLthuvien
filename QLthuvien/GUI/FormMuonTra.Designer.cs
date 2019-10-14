@@ -227,9 +227,9 @@
             // 
             this.picture_avatar.BaseColor = System.Drawing.Color.White;
             this.picture_avatar.Image = global::QLthuvien.Properties.Resources.avatar;
-            this.picture_avatar.Location = new System.Drawing.Point(101, 22);
+            this.picture_avatar.Location = new System.Drawing.Point(118, 11);
             this.picture_avatar.Name = "picture_avatar";
-            this.picture_avatar.Size = new System.Drawing.Size(120, 120);
+            this.picture_avatar.Size = new System.Drawing.Size(142, 145);
             this.picture_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_avatar.TabIndex = 15;
             this.picture_avatar.TabStop = false;

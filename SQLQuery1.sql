@@ -12,6 +12,17 @@ and TuaSach.TenTS=@TenTs
 
 
 DS_Sach N'Tôi Thấy Hoa Vàng Trên Cỏ Xanh'
-create proc MuonSach @TenSach nvarchar(100),@MaSach nvarchar(50),@MaDG nvarchar(50),@NgayMuon date
+
+
+create proc MuonSach @TenSach nvarchar(100),@MaSach nvarchar(50),@MaDG nvarchar(50),@NgayMuon date,@MaPM nvarchar(50)
 as
-insert into PhieuMuon()
+insert into PhieuMuon(MaDG,MaPM,NgayMuon) 
+values(@MaDG,@MaPM,@NgayMuon)
+insert into ChiTietMuon(MaPM,MaCS) values(@MaPM,@MaDG)
+
+
+
+select *from PhieuMuon order by MaPM desc
+
+MuonSach 'Tôi Thấy Hoa Vàng Trên Cỏ Xanh','TS001_001','13150001','2019-01-01','PM988'
+
