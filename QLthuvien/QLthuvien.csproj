@@ -195,6 +195,7 @@
     <Content Include="Img\delete.png" />
     <Content Include="Img\doc_gia.jpg" />
     <Content Include="Img\plus.png" />
+    <Content Include="Img\reload-symbol.png" />
     <Content Include="Img\resume.png" />
     <Content Include="Img\search.png" />
     <None Include="Resources\loupe.png" />

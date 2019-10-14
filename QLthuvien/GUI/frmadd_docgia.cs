@@ -36,7 +36,7 @@ namespace QLthuvien.GUI
             string diachi = text_diachi.Text;
             if (Id == "" || name == "" )
             {
-                MessageBox.Show("Vui lòng điền đủ thông tin những trường yêu cầu!");
+                MessageBox.Show("Vui lòng điền đủ thông tin Mã độc giả và tên độc giả!");
                 return;
             }
             else
@@ -96,6 +96,19 @@ namespace QLthuvien.GUI
             {
                 MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại!");
                 return 0;
+            }
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Bạn muốn hủy thao tác và quay về trang chủ ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            if (res == DialogResult.No)
+            {
+               
             }
         }
     }
