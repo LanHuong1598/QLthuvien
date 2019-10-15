@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace QLthuvien.GUI
 {
-    public partial class FormBanDoc : Form
+    public partial class FormBanDoc : Form  
     {
         public FormBanDoc()
         {
