@@ -13,7 +13,7 @@ namespace QLthuvien.GUI
 {
     public partial class FormBanDoc : Form  
     {
-        public FormBanDoc()
+        public FormBanDoc()  
         {
             InitializeComponent();
             
