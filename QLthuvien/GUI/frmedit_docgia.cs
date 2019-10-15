@@ -45,7 +45,7 @@ namespace QLthuvien.GUI
             }
             else
             {
-                int check = UpDate_data(Id, name, date, gioitinh, diachi, sdt, FormBanDoc.Mabandoc);
+                int check = 1;// UpDate_data(Id, name, date, gioitinh, diachi, sdt, FormBanDoc.Mabandoc);
                 if (check == 1)
                 {
                     MessageBox.Show("Update thành công");
@@ -174,8 +174,13 @@ namespace QLthuvien.GUI
             string Ma = temp.Cells[0].Value.ToString();
             frmedit_docgia.ma = Ma;
             string ten = temp.Cells[1].Value.ToString();
-            FormBanDoc.Tenbandoc = ten;
+            //FormBanDoc.Tenbandoc = ten;
             show();
+        }
+
+        private void showData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

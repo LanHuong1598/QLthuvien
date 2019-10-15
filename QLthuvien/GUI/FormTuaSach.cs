@@ -13,13 +13,14 @@ namespace QLthuvien.GUI
 {
     public partial class FormTuaSach : Form
     {
+        public static string idtuasach;
         public FormTuaSach()
         {
 
             InitializeComponent();
             gunaDataGridView1.CellClick += new DataGridViewCellEventHandler(datagridview_cell_click);
-            string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', "+
-"TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB "+
+            string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
+"TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +
 "where TuaSach.MaNXB = NXB.MaNXB";
             invalidate(query);
 
@@ -44,36 +45,7 @@ namespace QLthuvien.GUI
         }
         private void datagridview_cell_click(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != -1)
-            {
-                // MessageBox.Show(gunaDataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
-                if (gunaDataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Equals("Sửa"))
-                {
-                    DialogResult dialogResult = MessageBox.Show("Bạn muốn sửa " + gunaDataGridView1.Rows[e.RowIndex].Cells["Họ và tên"].Value.ToString() + " ? ", "Xác nhận", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
-                    {
-                        //do something
-                    }
-                    else if (dialogResult == DialogResult.No)
-                    {
-                        //do something else
-                    }
-                }
-                else if (gunaDataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Equals("Xóa"))
-                {
-                    DialogResult dialogResult = MessageBox.Show("Bạn muốn xóa " + gunaDataGridView1.Rows[e.RowIndex].Cells["Họ và tên"].Value.ToString() + " ? ", "Xác nhận", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
-                    {
-                        //do something
-                    }
-                    else if (dialogResult == DialogResult.No)
-                    {
-                        //do something else
-                    }
-                }
-            }
-            gunaAdvenceButton2.Enabled = false;
-            //   MessageBox.Show(e.RowIndex + " " + e.ColumnIndex + " ");
+
 
         }
         private void FormTuaSach_Load(object sender, EventArgs e)
@@ -94,8 +66,66 @@ namespace QLthuvien.GUI
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
-            FormAddTuaSach fr = new FormAddTuaSach();
+            FormSuaTuaSach fr = new FormSuaTuaSach(FormTuaSach.idtuasach);
             fr.ShowDialog();
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = gunaDataGridView1.SelectedRows[0].Index;
+            DataGridViewRow temp = this.gunaDataGridView1.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormTuaSach.idtuasach = Ma;
+            
+        }
+
+        private void gunaAdvenceButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                delete(FormTuaSach.idtuasach);
+                MessageBox.Show("Xóa thành công");
+
+                string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
+"TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +
+"where TuaSach.MaNXB = NXB.MaNXB";
+                invalidate(query);
+
+            }
+            catch
+            {
+                MessageBox.Show("Xóa không thành công");
+            }
+        }
+        public void delete(string key)
+        {
+            string query1 = "DELETE	FROM dbo.tuasach WHERE mats=  @id";
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(Form1.checkConnectionString);
+            DataSet data = new DataSet();
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+
+                connect.Open();
+                SqlCommand cmd = connect.CreateCommand();
+                cmd.CommandText = query1;
+                cmd.Parameters.Add("@id", SqlDbType.NVarChar).Value = key;
+                cmd.ExecuteNonQuery();
+                connect.Close();
+            }
+        }
+
+        private void gunaDataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = gunaDataGridView1.SelectedRows[0].Index;
+            DataGridViewRow temp = this.gunaDataGridView1.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            FormTuaSach.idtuasach = Ma;
+            //FormBanDoc.Tenbandoc = ten;
         }
     }
 }

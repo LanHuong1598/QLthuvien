@@ -61,9 +61,9 @@ namespace QLthuvien.GUI
             posClicked = showData.SelectedRows[0].Index;
             DataGridViewRow temp = this.showData.Rows[posClicked];
             string Ma = temp.Cells[0].Value.ToString();
-            FormBanDoc.Mabandoc = Ma;
+            //FormBanDoc.Mabandoc = Ma;
             string ten = temp.Cells[1].Value.ToString();
-            FormBanDoc.Tenbandoc = ten;
+           // FormBanDoc.Tenbandoc = ten;
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace QLthuvien.GUI
             initData();
         }
 
-        private void gunaButton3_Click(object sender, EventArgs e)
+       /* private void gunaButton3_Click(object sender, EventArgs e)
         {
             gunaPanel2.Visible = false;
             if (FormBanDoc.Mabandoc == null)
@@ -143,7 +143,7 @@ namespace QLthuvien.GUI
                    
                 }
             }
-        }
+        }*/
         public void delete_docgia(string key)
         {
             string query1 = "DELETE FROM DocGia WHERE MaDG = @ID";

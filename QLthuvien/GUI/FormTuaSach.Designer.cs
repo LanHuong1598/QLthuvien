@@ -90,6 +90,7 @@
             this.gunaAdvenceButton4.TabIndex = 13;
             this.gunaAdvenceButton4.Text = "Xóa tựa sách";
             this.gunaAdvenceButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton4.Click += new System.EventHandler(this.gunaAdvenceButton4_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -255,6 +256,8 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
+            this.gunaDataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gunaDataGridView1_CellMouseClick);
             // 
             // gunaGradientButton1
             // 
