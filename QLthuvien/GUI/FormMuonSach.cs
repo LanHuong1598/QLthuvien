@@ -12,7 +12,7 @@ namespace QLthuvien.GUI
 {
     public partial class FormMuonSach : Form
     {
-        ConnectString cnn=new ConnectString();
+        ConnectString cnn=new ConnectString();  
         SqlConnection conn;
         string query = "";
         SqlDataAdapter adap;
@@ -37,7 +37,7 @@ namespace QLthuvien.GUI
                 cmd.Parameters.AddWithValue("@TenTs", cb_TuaSach.Text.ToString().Trim());
                 adap = new SqlDataAdapter(cmd);
                 adap.Fill(data_Sach);
-                MaSach = data_Sach.Rows[0]["MaCS"].ToString();
+                MaSach = data_Sach.Rows[0]["MaCS"].ToString();  
                 
             }
             catch
