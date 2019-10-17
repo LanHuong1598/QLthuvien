@@ -25,7 +25,7 @@ namespace QLthuvien.GUI
             DateTime date  = ngay_sinh_docgia.Value;
             string sdt = txt_sodienthoai.Text;
             string gioitinh;
-            if(check_nam.Checked==true)
+            if(ra_nam.Checked==true)
             {
                 gioitinh = "Nam";
             }
