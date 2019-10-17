@@ -34,7 +34,7 @@ namespace QLthuvien.GUI
                 DataTable data_Sach = new DataTable();
                 SqlCommand cmd = new SqlCommand("DS_Sach", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TenTs", cb_TuaSach.Text.ToString().Trim());
+                cmd.Parameters.AddWithValue("@TenTs", cb_TuaSach.Text.ToString().Trim());  
                 adap = new SqlDataAdapter(cmd);
                 adap.Fill(data_Sach);
                 MaSach = data_Sach.Rows[0]["MaCS"].ToString();  
