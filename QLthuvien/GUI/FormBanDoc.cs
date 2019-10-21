@@ -48,18 +48,12 @@ namespace QLthuvien.GUI
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            gunaPanel2.Visible = false;
-            if (FormBanDoc.Mabandoc==null)
-            {
-                MessageBox.Show("Chưa chọn độc giả để sửa thông tin, vui lòng quay lại!");
-            }
-            else
-            {
+            
 
                 frmedit_docgia fr = new frmedit_docgia();
                 fr.ShowDialog();
                 initData();
-            }
+            
             
         }
 

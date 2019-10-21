@@ -14,10 +14,12 @@ namespace QLthuvien.GUI
 {
     public partial class frmedit_docgia : Form
     {
+        public static string ma;
         public frmedit_docgia()
         {
             InitializeComponent();
-            show();
+           
+            initData();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -27,7 +29,7 @@ namespace QLthuvien.GUI
             DateTime date = ngay_sinh.Value;
             string sdt = text_sdt.Text;
             string gioitinh;
-            if (check_nam.Checked == true)
+            if (ra_nam.Checked == true)
             {
                 gioitinh = "Nam";
             }
@@ -60,24 +62,31 @@ namespace QLthuvien.GUI
         public void show()
         {
             
-            DataTable data = connectionTable(FormBanDoc.Mabandoc);
-            tex_MA_docgia.Text = data.Rows[0]["MaDG"].ToString();
-            Tex_tendocgia.Text = data.Rows[0]["TenDG"].ToString();
+                DataTable data = connectionTable(frmedit_docgia.ma);
+                tex_MA_docgia.Text = data.Rows[0]["MaDG"].ToString();
+                Tex_tendocgia.Text = data.Rows[0]["TenDG"].ToString();
+
+                string gioitinh = data.Rows[0]["GioiTinh"].ToString().TrimEnd();
+                if (gioitinh == "Nam")
+                {
+                    ra_nam.Checked = true;
+                    ra_nu.Checked = false;
+                }
+                else
+                {
+                    ra_nam.Checked = false;
+                    ra_nu.Checked = true;
+                }
+                text_diachi.Text = data.Rows[0]["DiaChi"].ToString();
+                text_sdt.Text = data.Rows[0]["SDT"].ToString();
+                string temp = data.Rows[0]["NgaySinh"].ToString();
+                int n2 = temp.IndexOf(" ");
+                string temp1 = temp.Substring(0, n2);
+                ngay_sinh.Value = DateTime.ParseExact(temp1, "M/d/yyyy", CultureInfo.InvariantCulture);
             
-            string gioitinh = data.Rows[0]["GioiTinh"].ToString();
-            if(gioitinh=="Nam")
-            {
-                check_nam.Checked = true;
-                check_nu.Checked = false;
-            }
-            else
-            {
-                check_nam.Checked = false;
-                check_nu.Checked = true;
-            }
-            text_diachi.Text = data.Rows[0]["DiaChi"].ToString();
-            text_sdt.Text = data.Rows[0]["SDT"].ToString();
+            
         }
+
         private DataTable connectionTable(string ma)
         {
             DataTable data = new DataTable();
@@ -128,6 +137,45 @@ namespace QLthuvien.GUI
             }
         }
 
-       
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Bạn muốn hủy thao tác và quay về trang chủ ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            if (res == DialogResult.No)
+            {
+
+            }
+        }
+        private void initData()
+        {
+            string query = "SELECT * FROM DocGia";
+            DataSet data = new DataSet();
+            ConnectString b = new ConnectString();
+            string con = b.getConnectionString(Form1.checkConnectionString);
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, con);
+                apter.Fill(data);
+                connect.Close();
+            }
+            showData.DataSource = data.Tables[0];
+        }
+
+        private void showData_CellMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[0].Value.ToString();
+            frmedit_docgia.ma = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+            FormBanDoc.Tenbandoc = ten;
+            show();
+        }
     }
 }

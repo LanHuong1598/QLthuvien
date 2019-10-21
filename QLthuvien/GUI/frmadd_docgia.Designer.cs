@@ -40,14 +40,14 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.ngay_sinh_docgia = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.check_nam = new Guna.UI.WinForms.GunaCheckBox();
-            this.check_nu = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.ra_nam = new Guna.UI.WinForms.GunaRadioButton();
+            this.ra_nu = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaPanel2.SuspendLayout();
@@ -196,39 +196,11 @@
             this.ngay_sinh_docgia.Text = "10/3/2019";
             this.ngay_sinh_docgia.Value = new System.DateTime(2019, 10, 3, 20, 47, 44, 195);
             // 
-            // check_nam
-            // 
-            this.check_nam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(94)))), ((int)(((byte)(204)))));
-            this.check_nam.BaseColor = System.Drawing.Color.White;
-            this.check_nam.CheckedOffColor = System.Drawing.Color.Gray;
-            this.check_nam.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.check_nam.FillColor = System.Drawing.Color.White;
-            this.check_nam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_nam.Location = new System.Drawing.Point(16, 12);
-            this.check_nam.Name = "check_nam";
-            this.check_nam.Size = new System.Drawing.Size(69, 27);
-            this.check_nam.TabIndex = 13;
-            this.check_nam.Text = "Nam";
-            // 
-            // check_nu
-            // 
-            this.check_nu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(94)))), ((int)(((byte)(204)))));
-            this.check_nu.BaseColor = System.Drawing.Color.White;
-            this.check_nu.CheckedOffColor = System.Drawing.Color.Gray;
-            this.check_nu.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.check_nu.FillColor = System.Drawing.Color.White;
-            this.check_nu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_nu.Location = new System.Drawing.Point(175, 12);
-            this.check_nu.Name = "check_nu";
-            this.check_nu.Size = new System.Drawing.Size(55, 27);
-            this.check_nu.TabIndex = 14;
-            this.check_nu.Text = "Nữ";
-            // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
-            this.gunaPanel1.Controls.Add(this.check_nam);
-            this.gunaPanel1.Controls.Add(this.check_nu);
+            this.gunaPanel1.Controls.Add(this.ra_nu);
+            this.gunaPanel1.Controls.Add(this.ra_nam);
             this.gunaPanel1.Location = new System.Drawing.Point(163, 416);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(286, 48);
@@ -313,6 +285,32 @@
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
+            // ra_nam
+            // 
+            this.ra_nam.BaseColor = System.Drawing.SystemColors.Control;
+            this.ra_nam.CheckedOffColor = System.Drawing.Color.Gray;
+            this.ra_nam.CheckedOnColor = System.Drawing.Color.Black;
+            this.ra_nam.FillColor = System.Drawing.Color.White;
+            this.ra_nam.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.ra_nam.Location = new System.Drawing.Point(16, 13);
+            this.ra_nam.Name = "ra_nam";
+            this.ra_nam.Size = new System.Drawing.Size(59, 20);
+            this.ra_nam.TabIndex = 32;
+            this.ra_nam.Text = "Nam";
+            // 
+            // ra_nu
+            // 
+            this.ra_nu.BaseColor = System.Drawing.SystemColors.Control;
+            this.ra_nu.CheckedOffColor = System.Drawing.Color.Gray;
+            this.ra_nu.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ra_nu.FillColor = System.Drawing.Color.White;
+            this.ra_nu.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.ra_nu.Location = new System.Drawing.Point(163, 13);
+            this.ra_nu.Name = "ra_nu";
+            this.ra_nu.Size = new System.Drawing.Size(55, 27);
+            this.ra_nu.TabIndex = 33;
+            this.ra_nu.Text = "Nữ";
+            // 
             // frmadd_docgia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -360,13 +358,13 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaDateTimePicker ngay_sinh_docgia;
-        private Guna.UI.WinForms.GunaCheckBox check_nam;
-        private Guna.UI.WinForms.GunaCheckBox check_nu;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaRadioButton ra_nu;
+        private Guna.UI.WinForms.GunaRadioButton ra_nam;
     }
 }
