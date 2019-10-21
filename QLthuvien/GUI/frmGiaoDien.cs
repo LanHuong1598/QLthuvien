@@ -15,6 +15,7 @@ namespace QLthuvien.GUI
         public frmGiaoDien()
         {
             InitializeComponent();
+            
         }
 
         private void gunaCircleButton2_Click(object sender, EventArgs e)
@@ -32,6 +33,35 @@ namespace QLthuvien.GUI
         private void btn_logout_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+      
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            FormTuaSach fr = new FormTuaSach();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaImageButton2_Click(object sender, EventArgs e)
+        {
+            FormBanDoc a = new FormBanDoc();
+            this.Hide();
+            a.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaImageButton3_Click(object sender, EventArgs e)
+        {
+            FormMuonTra fr = new FormMuonTra();
+            fr.Show();
         }
     }
 }
