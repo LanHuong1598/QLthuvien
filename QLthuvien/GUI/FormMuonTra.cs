@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace QLthuvien.GUI
 {
-    public partial class FormMuonTra : Form
+    public partial class FormMuonTra : Form   
     {
         ConnectString cnn = new ConnectString();
         string conectionString="";
