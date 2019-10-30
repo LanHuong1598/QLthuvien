@@ -10,7 +10,7 @@ namespace QLthuvien
     class ConnectString
     {
         public string getConnectionString(int value)
-        {
+        {   
             if(value == 0)
             {
                 return @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
@@ -29,9 +29,9 @@ namespace QLthuvien
                 {
 
                     connect.Open();
-                    connect.Close();
+                    connect.Close();      
                 }
-                return 1;
+                return 1;   
             }
             catch
             {
@@ -40,7 +40,7 @@ namespace QLthuvien
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
-                    connect.Open();
+                    connect.Open();    
                     connect.Close();
                 }
                 return 0;

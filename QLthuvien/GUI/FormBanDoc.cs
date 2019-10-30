@@ -11,10 +11,8 @@ using System.Windows.Forms;
 
 namespace QLthuvien.GUI
 {
-    public partial class FormBanDoc : Form
+    public partial class FormBanDoc : Form    
     {
-        public static string Mabandoc;
-        public static string Tenbandoc;
         public FormBanDoc()
         {
             InitializeComponent();
@@ -30,10 +28,10 @@ namespace QLthuvien.GUI
             using (SqlConnection connect = new SqlConnection(con))
             {
 
-                connect.Open();
+                connect.Open();     
                 SqlDataAdapter apter = new SqlDataAdapter(query, con);
                 apter.Fill(data);
-                connect.Close();
+                connect.Close();      
             }
             showData.DataSource = data.Tables[0];
         }

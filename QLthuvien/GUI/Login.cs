@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLthuvien.GUI;
 namespace QLthuvien
-{
-    public partial class Form1 : Form
+{   
+    public partial class Form1 : Form     
     {
         internal static int checkConnectionString;
         
