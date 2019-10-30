@@ -13,7 +13,7 @@ namespace QLthuvien.GUI
 {
     public partial class FormMuonTra : Form   
     {
-        ConnectString cnn = new ConnectString();
+        ConnectString cnn = new ConnectString();   
         string conectionString="";
         string query = "";
         SqlConnection conn;
@@ -39,7 +39,7 @@ namespace QLthuvien.GUI
             catch
                 {
 
-            }
+            }   
             
 
 
