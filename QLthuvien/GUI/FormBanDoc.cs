@@ -265,5 +265,35 @@ namespace QLthuvien.GUI
             FormBanDoc.Mabandoc = Ma;
             string ten = temp.Cells[1].Value.ToString();
         }
+
+        private void invalidate(string query)
+        {
+
+            showData.Columns.Clear();
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(Form1.checkConnectionString);
+            DataSet data = new DataSet();
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                apter.Fill(data);
+                connect.Close();
+            }
+            showData.DataSource = data.Tables[0];
+        }
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+            string query = " select * from docgia " +
+"where TenDG like N'%" + gunaTextBox1.Text.Trim() + "%' or MaDG like N'%" + gunaTextBox1.Text.Trim() + "%'";
+            invalidate(query);
+        }
+
+        private void gunaTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
