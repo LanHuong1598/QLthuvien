@@ -18,6 +18,7 @@ namespace QLthuvien.GUI
         public FormBanDoc()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             gunaPanel2.Visible = false;
             initData();
         }

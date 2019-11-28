@@ -17,6 +17,7 @@ namespace QLthuvien.GUI
         public FormSuaTuaSach(string id)
         {
             InitializeComponent();
+            this.MaximizeBox = false;
             Idsach = id; 
             txtma.Enabled = false;
             Show();

@@ -18,6 +18,7 @@ namespace QLthuvien.GUI
         {
 
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             gunaDataGridView1.CellClick += new DataGridViewCellEventHandler(datagridview_cell_click);
             string query = " select MaTS AS 'Mã Tựa sách',TenTS AS 'Tên sách',NamXB as 'Năm xuất bản', " +
 "TheLoai AS 'Thể loại',dbo.NXB.TenNXB AS 'Nhà xuất bản', MaKe as 'Kệ sách'  FROM dbo.TuaSach, NXB " +

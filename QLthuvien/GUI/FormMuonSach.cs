@@ -20,6 +20,7 @@ namespace QLthuvien.GUI
         public FormMuonSach()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             dssach.Columns.Add("MaPhieu", "MaPhieu");
             dssach.Columns.Add("MaSach", "MaSach");
 
