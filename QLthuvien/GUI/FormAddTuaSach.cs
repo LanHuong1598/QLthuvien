@@ -16,6 +16,8 @@ namespace QLthuvien.GUI
         public FormAddTuaSach()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace QLthuvien.GUI
         public FormMuonTra()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             conectionString = cnn.getConnectionString(Form1.checkConnectionString);
             query = "select MaDG from DocGia";
             conn = new SqlConnection(conectionString);
