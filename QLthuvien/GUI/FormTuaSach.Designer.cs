@@ -164,16 +164,19 @@
             // 
             // btTimKiem
             // 
-     //       this.btTimKiem.BackgroundImage = global::QLthuvien.Properties.Resources.iconsearch;
-   //         this.btTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-   //         this.btTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-  //          this.btTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-   //         this.btTimKiem.ForeColor = System.Drawing.Color.White;
-    //        this.btTimKiem.Location = new System.Drawing.Point(175, 221);
-    //        this.btTimKiem.Name = "btTimKiem";
-     //       this.btTimKiem.Size = new System.Drawing.Size(47, 42);
-     //       this.btTimKiem.TabIndex = 4;
-     //       this.btTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // btTimKiem
+            // 
+            //       this.btTimKiem.BackgroundImage = global::QLthuvien.Properties.Resources.iconsearch;
+            //         this.btTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            //         this.btTimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            //          this.btTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            //         this.btTimKiem.ForeColor = System.Drawing.Color.White;
+            //        this.btTimKiem.Location = new System.Drawing.Point(175, 221);
+            //        this.btTimKiem.Name = "btTimKiem";
+            //       this.btTimKiem.Size = new System.Drawing.Size(47, 42);
+            //       this.btTimKiem.TabIndex = 4;
+            //       this.btTimKiem.UseVisualStyleBackColor = true;
             // 
             // gunaDataGridView1
             // 
